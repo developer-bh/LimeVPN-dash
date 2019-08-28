@@ -1,53 +1,8 @@
 $(document).ready(function() {
 
-    // Chart
+    // Phone
 
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'line',
-
-        // The data for our dataset
-        data: {
-
-            labels: ['15-6-2019', '20-6-2019', '25-6-2019', '30-6-2019', '06-6-2019'],
-            datasets: [{
-                label: 'My First dataset',
-                backgroundColor: 'transparent',
-                pointBackgroundColor: '#fff',
-                pointBorderColor: '#2693ff',
-                pointRadius: 8,
-                borderColor: '#e6e6e6',
-                data: [0, 10, 5, 2, 20]
-            }]
-        },
-
-        // Configuration options go here
-        options: {
-            scales: {
-                xAxes: [{
-                    gridLines: {
-                        display: false,
-                        drawBorder: false
-                    },
-                    ticks: {
-                        fontColor: "#808080",
-                        fontSize: 16,
-                        top: 25
-                    }
-                }],
-                yAxes: [{
-                    gridLines: {
-                        display: false,
-                        drawBorder: false
-                    },
-                    ticks: {
-                        display: false
-                    }
-                }]
-            }
-        }
-    });
+    window.onload = function() {var input = document.querySelector("#phone"); window.intlTelInput(input);};
 
     // Header notification
 
@@ -161,43 +116,92 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
+    // Chart
+
+    $(function() {
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['15-6-2019', '20-6-2019', '25-6-2019', '30-6-2019', '06-6-2019'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'transparent',
+                    pointBackgroundColor: '#fff',
+                    pointBorderColor: '#2693ff',
+                    pointRadius: 8,
+                    borderColor: '#e6e6e6',
+                    data: [0, 10, 5, 2, 20]
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false,
+                            drawBorder: false
+                        },
+                        ticks: {
+                            fontColor: "#808080",
+                            fontSize: 16,
+                            top: 25
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            display: false,
+                            drawBorder: false
+                        },
+                        ticks: {
+                            display: false
+                        }
+                    }]
+                }
+            }
+        });
+    });
+
+    // Plans Toggle
+
+    var e = document.getElementById("filt-monthly"),
+        d = document.getElementById("filt-yearly"),
+        t = document.getElementById("switcher"),
+        m = document.getElementById("monthly"),
+        y = document.getElementById("yearly");
+
+    e.addEventListener("click", function(){
+        t.checked = false;
+        e.classList.add("toggler--is-active");
+        d.classList.remove("toggler--is-active");
+        m.classList.remove("hide");
+        y.classList.add("hide");
+    });
+
+    d.addEventListener("click", function(){
+        t.checked = true;
+        d.classList.add("toggler--is-active");
+        e.classList.remove("toggler--is-active");
+        m.classList.add("hide");
+        y.classList.remove("hide");
+    });
+
+    t.addEventListener("click", function(){
+        d.classList.toggle("toggler--is-active");
+        e.classList.toggle("toggler--is-active");
+        m.classList.toggle("hide");
+        y.classList.toggle("hide");
+    });
+
     // Plan modal wizard
 
-    $("#professional").modalWizard();
-
-    // Phone
-
-    var input = document.querySelector("#phone"); window.intlTelInput(input);
+    $(function() {
+        $("#professional").modalWizard();
+    });
 
 });
 
-// Plans Toggle
-
-var e = document.getElementById("filt-monthly"),
-    d = document.getElementById("filt-yearly"),
-    t = document.getElementById("switcher"),
-    m = document.getElementById("monthly"),
-    y = document.getElementById("yearly");
-
-e.addEventListener("click", function(){
-    t.checked = false;
-    e.classList.add("toggler--is-active");
-    d.classList.remove("toggler--is-active");
-    m.classList.remove("hide");
-    y.classList.add("hide");
-});
-
-d.addEventListener("click", function(){
-    t.checked = true;
-    d.classList.add("toggler--is-active");
-    e.classList.remove("toggler--is-active");
-    m.classList.add("hide");
-    y.classList.remove("hide");
-});
-
-t.addEventListener("click", function(){
-    d.classList.toggle("toggler--is-active");
-    e.classList.toggle("toggler--is-active");
-    m.classList.toggle("hide");
-    y.classList.toggle("hide");
-});
