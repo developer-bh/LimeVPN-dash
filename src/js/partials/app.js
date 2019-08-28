@@ -2,10 +2,51 @@ $(document).ready(function() {
 
     // Chart
 
-    var myLineChart = new Chart(ctx, {
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
         type: 'line',
-        data: data,
-        options: options
+
+        // The data for our dataset
+        data: {
+
+            labels: ['15-6-2019', '20-6-2019', '25-6-2019', '30-6-2019', '06-6-2019'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: 'transparent',
+                pointBackgroundColor: '#fff',
+                pointBorderColor: '#2693ff',
+                pointRadius: 8,
+                borderColor: '#e6e6e6',
+                data: [0, 10, 5, 2, 20]
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        fontColor: "#808080",
+                        fontSize: 16,
+                        top: 25
+                    }
+                }],
+                yAxes: [{
+                    gridLines: {
+                        display: false,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }]
+            }
+        }
     });
 
     // Header notification
