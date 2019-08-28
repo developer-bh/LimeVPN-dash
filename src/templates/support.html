@@ -1,0 +1,108 @@
+<!--begin header nav-->
+<section class="header_nav">
+    <div class="container">
+        <div class="row">
+            <ul class="d-flex justify-content-center m-0 p-0 w-100">
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="billing.html">Billng</a>
+                </li>
+                <li>
+                    <a href="how_to_use.html">How to use</a>
+                </li>
+                <li>
+                    <a href="rewards.html">Rewards</a>
+                </li>
+                <li class="active">
+                    <a href="support.html">Support</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--end header nav-->
+<!--begin support-->
+<section class="support">
+    <div class="container">
+        <div class="row">
+            <div class="col-9 col-md-9 support__help support_help">
+                <div class="box">
+                    <div class="row">
+                        <div class="col-12 col-md-6 support_help__img">
+                            <img src="img/img_support.svg" alt="Image" />
+                        </div>
+                        <div class="col-12 col-md-6 support_help__info">
+                            <h3 class="title">How can we help?</h3>
+                            <input type="search" placeholder="Search our articles">
+                            <div class="support_help__btns d-flex justify-content-between">
+                                <a class="btn_blue" href="#/">Search</a>
+                                <a class="btn_blue" href="#/">Live Chat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-3 support__ticket support_ticket">
+                <div class="box">
+                    <a href="#/" data-toggle="modal" data-target="#support">Open <br> Ticket</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 support__table support_table">
+                <div class="box">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Ticket</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Update</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row"><span></span></th>
+                            <td>#456765</td>
+                            <td>13-05-19</td>
+                            <td class="color_green">Active</td>
+                            <td>In process</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span></span></th>
+                            <td>#456765</td>
+                            <td>13-05-19</td>
+                            <td class="color_green">Active</td>
+                            <td>In process</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end support-->
+<!--begin modals-->
+<div class="modal bd-example-modal-lg modal_support" id="support" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="title">Submit Ticket</h3>
+                <form>
+                    <label for="department">
+                        Department
+                        <input type="text" id="department">
+                    </label>
+                    <label for="department">
+                        Message
+                        <textarea id="message"></textarea>
+                    </label>
+                    <input class="btn_blue" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->

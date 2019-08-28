@@ -1,0 +1,188 @@
+// Header
+
+.header
+  padding: 24px 50px
+  background-image: linear-gradient(225deg, #00ddec 0%, #008dea 100%)
+  .btn_upgrade
+    min-width: 198px
+    height: 48px
+    margin-right: 45px
+    img
+      margin-right: 17px
+  .btn_notification
+    position: relative
+    margin-right: 45px
+    text-decoration: none
+    &:after
+      display: none
+    &:hover
+      text-decoration: none
+    span
+      position: absolute
+      right: 0
+      top: 0
+      width: 10px
+      height: 10px
+      background-color: #fc081a
+      display: flex
+      align-items: center
+      justify-content: center
+      color: white
+      border-radius: 50%
+      font-size: 9px
+  .btn_profile
+    font-size: 24px
+    background-color: transparent!important
+    border: none
+    font-weight: 500
+    box-shadow: none
+  .show > .btn-secondary.dropdown-toggle:focus
+    box-shadow: none!important
+  .dropdown_notification
+    .dropdown-menu
+      width: 527px
+      max-width: 527px
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+      border: 0
+      border-radius: 12px
+      background-color: white
+      padding: 20px 0
+      &.show
+        left: -150px!important
+        top: initial!important
+      .title
+        padding: 0 70px 10px 70px
+        color: #666
+        font-size: 18px
+        font-weight: 600
+      ul
+        list-style: none
+        li
+          padding: 20px 30px
+          display: flex
+          align-items: center
+          justify-content: space-between
+          transition: 0.3s
+          &:hover
+            transition: 0.3s
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+            .icon_notification
+              transition: 0.3s
+              opacity: 1
+            p
+              transition: 0.3s
+              color: #333
+            .icon_close
+              img
+                transition: 0.3s
+                opacity: 0.7
+          .icon_notification
+            transition: 0.3s
+            margin-right: 30px
+            width: 20px
+            opacity: 0.7
+          p
+            transition: 0.3s
+            width: 400px
+            max-width: 100%
+            color: #999
+            font-size: 14px
+            font-weight: 300
+            line-height: 20px
+            margin-right: 10px
+            margin-bottom: 0
+            b, strong
+              font-weight: 600
+          .icon_close
+            img
+              transition: 0.3s
+              width: 18px
+  .dropdown_profile
+    .dropdown-menu
+      width: 338px
+      max-width: 338px
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+      border: 0
+      border-radius: 11px
+      background-color: white
+      padding: 30px 0
+      &.show
+        left: -50px!important
+        top: initial!important
+      a
+        height: 57px
+        display: flex
+        align-items: center
+        color: #b3b3b3
+        font-size: 20px
+        font-weight: 500
+        line-height: 60px
+        img
+          margin-right: 35px
+          &:first-child
+            display: block
+          &:nth-child(2)
+            display: none
+        &:hover
+          color: #383838
+          background-color: #f2f2f2
+          img
+            &:first-child
+              display: none
+            &:nth-child(2)
+              display: block
+  &__notification
+    padding: 15px 50px
+    background-color: #333
+    p
+      color: white
+      margin-bottom: 0
+      text-align: right
+    .btn_white
+      width: 158px
+      height: 39px
+      margin-right: 50px
+      transition: 0.3s
+      &:hover
+        transition: 0.3s
+        background-color: white
+        color: #333
+    .notification_close
+      transition: 0.3s
+      &:hover
+        transition: 0.3s
+        transform: rotate(90deg)
+
+
+.header_nav
+  margin-bottom: 80px
+  ul
+    li
+      margin: 0 40px
+      list-style: none
+      a
+        display: flex
+        color: #b3b3b3
+        font-size: 24px
+        font-weight: 400
+        line-height: 28.8px
+        text-decoration: none
+        position: relative
+        padding-top: 16px
+        transition: 0.3s
+        &:before
+          position: absolute
+          content: ''
+          top: 0
+          width: 0
+          height: 8px
+          background-color: #aedcfc
+        &:hover
+          transition: 0.3s
+          color: $color_blue
+      &.active
+        a
+          color: $color_blue
+          font-weight: 600
+          &:before
+            width: 100%

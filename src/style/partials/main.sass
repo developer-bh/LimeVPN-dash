@@ -1,0 +1,194 @@
+// Global
+
+*
+  font-family: 'Proxima Nova', sans-serif!important
+
+img
+  max-width: 100%
+
+.hide
+  display: none
+
+// Sizes
+
+.height_100vh
+  height: 100vh
+
+.font-14
+  font-size: 14px
+
+.font-16
+  font-size: 16px
+
+.font_18
+  font-size: 18px
+
+.font_20
+  font-size: 20px
+
+.font_22
+  font-size: 22px
+
+.font_24
+  font-size: 24px
+
+.font_26
+  font-size: 26px
+
+.font_30
+  font-size: 30px
+
+.font_46
+  font-size: 46px
+
+.font-weight-500
+  font-weight: 500
+
+.font-weight-600
+  font-weight: 600
+
+// Colors
+
+.color_d_grey
+  color: #616161
+
+$color_d_grey: #616161
+
+.color_grey
+  color: #999
+
+$color_grey: #999
+
+.color_blue
+  color: #2693ff
+
+$color_blue: #2693ff
+
+.color_green
+  color: #47cf86
+
+$color_green: #47cf86
+
+.color_orange
+  color: #f7931e
+
+$color_orange: #f7931e
+
+.color_red
+  color: #ed1c24
+
+$color_red: #ed1c24
+
+
+// Buttons
+
+.btn_blue
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $color_blue
+  font-size: 19px
+  font-weight: 700
+  line-height: 22.8px
+  border-radius: 30px
+  border: 1px solid $color_blue
+  transition: 0.3s
+  outline: 0
+  &:hover
+    transition: 0.3s
+    background-color: $color_blue
+    color: white
+    text-decoration: none
+
+.btn_white
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: white
+  font-size: 16px
+  font-weight: 600
+  border-radius: 7px
+  border: 1px solid white
+  text-decoration: none
+  transition: 0.3s
+  outline: 0
+  &:hover
+    transition: 0.3s
+    background-color: $color_blue
+    border-color: white
+    color: white
+    text-decoration: none
+
+.btn_orange
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: #f15a24
+  font-size: 16px
+  font-weight: 400
+  border-radius: 21px
+  border: 1px solid #f15a24
+  text-decoration: none
+  transition: 0.3s
+  outline: 0
+  &:hover
+    transition: 0.3s
+    background-color: #f15a24
+    border-color: white
+    color: white
+    text-decoration: none
+
+// Classes
+
+.box
+  border-radius: 5px
+  border: 1px solid #d2eef9
+
+.b-b
+  border-bottom: 1px solid #d2eef9
+
+.s_title
+  color: #383838
+  font-size: 40px
+  font-weight: 500
+  line-height: 50px
+
+// Checkboxes
+
+.form-check
+  label
+    display: flex
+    color: #b3b3b3
+    font-size: 18px
+    font-weight: 400
+    p
+      width: 90%
+      max-width: 100%
+    b
+      color: #616161
+      font-weight: 700
+    &:after
+      content: ''
+      display: table
+      clear: both
+    input[type="checkbox"]
+      display: none
+    input[type="checkbox"]+.cr>.cr-icon
+      opacity: 0
+    input[type="checkbox"]:checked+.cr>.cr-icon
+      opacity: 1
+  .cr
+    position: relative
+    display: inline-block
+    border: 1px solid #d2eef9
+    border-radius: .25em
+    width: 1.3em
+    height: 1.3em
+    float: left
+    margin-right: 17px
+    .cr-icon
+      position: absolute
+      font-size: .8em
+      line-height: 0
+      top: 50%
+      left: 15%

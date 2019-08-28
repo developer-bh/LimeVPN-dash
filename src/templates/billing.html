@@ -1,0 +1,219 @@
+<!--begin header nav-->
+<section class="header_nav">
+    <div class="container">
+        <div class="row">
+            <ul class="d-flex justify-content-center m-0 p-0 w-100">
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="active">
+                    <a href="billing.html">Billng</a>
+                </li>
+                <li>
+                    <a href="how_to_use.html">How to use</a>
+                </li>
+                <li>
+                    <a href="rewards.html">Rewards</a>
+                </li>
+                <li>
+                    <a href="support.html">Support</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--end header nav-->
+<!--begin billing-->
+<section class="billing">
+    <div class="container">
+        <div class="row billing_subscribed">
+            <div class="col-8 col-md-8">
+                <div class="box">
+                    <p>You are subscribed to <b>LimeVPN Basic</b> plan</p>
+                </div>
+            </div>
+            <div class="col-4 col-md-4">
+                <div class="box box_cancel">
+                    <a href="#/" data-toggle="modal" data-target="#cancel">
+                        Cancel Subscription
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="billing_active">
+            <div class="row box ml-0 mr-0">
+                <div class="col-3 col-md-3 billing_active__item billing_active__bg">
+                    <p>Active Subscription</p>
+                </div>
+                <div class="col-3 col-md-3 billing_active__item">
+                    <p>LimeVPN Basic</p>
+                </div>
+                <div class="col-3 col-md-3 billing_active__item">
+                    <a class="color_green" href="plans.html">Change Plan</a>
+                </div>
+                <div class="col-3 col-md-3 billing_active__item">
+                    <a class="color_red" href="#/" data-toggle="modal" data-target="#cancel">
+                        Cancel Subscription
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 billing_table">
+                <div class="box">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Invoices</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Billing Details</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Payment method</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Invoice</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th class="form-check" scope="row">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                                        </label>
+                                    </th>
+                                    <td>#44RT65</td>
+                                    <td class="color_green">Lime VPN Professional</td>
+                                    <td>10-04-2019 <span>( 10:22:34 )</span></td>
+                                    <td class="color_orange">$ 0.87</td>
+                                    <td>
+                                        <a href="#/">View</a>
+                                        <a href="#/"><img src="img/icon_download_blue.svg" alt="Icon" /></a>
+                                        <a href="#/"><img src="img/icon_save_blue.svg" alt="Icon" /></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="form-check" scope="row">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                                        </label>
+                                    </th>
+                                    <td>#44RT65</td>
+                                    <td class="color_green">Lime VPN Professional</td>
+                                    <td>10-04-2019 <span>( 10:22:34 )</span></td>
+                                    <td class="color_orange">$ 0.87</td>
+                                    <td>
+                                        <a href="#/">View</a>
+                                        <a href="#/"><img src="img/icon_download_blue.svg" alt="Icon" /></a>
+                                        <a href="#/"><img src="img/icon_save_blue.svg" alt="Icon" /></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <form>
+                                <label for="name" class="label_half">
+                                    First name
+                                    <input type="text" id="name">
+                                </label>
+                                <label for="last_name" class="label_half">
+                                    Last name
+                                    <input type="text" id="last_name">
+                                </label>
+                                <label for="city" class="label_four">
+                                    City
+                                    <input type="text" id="city">
+                                </label>
+                                <label for="country" class="label_four">
+                                    Country
+                                    <input type="text" id="country">
+                                </label>
+                                <label for="code" class="label_four">
+                                    Post code
+                                    <input type="text" id="code">
+                                </label>
+                                <label for="phone" class="label_four">
+                                    Contact no.
+                                    <input class="focused" id="phone" type="tel">
+                                </label>
+                                <label for="address">
+                                    Billing address
+                                    <textarea id="address"></textarea>
+                                </label>
+                                <div class="d-flex justify-content-end w-100">
+                                    <input type="submit" class="btn_blue" value="Save">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade billing_methods" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <ul class="p-0 d-flex flex-wrap">
+                                <li>
+                                    <a href="#/">
+                                        <img src="img/logo_paymentwall.svg" alt="Logo" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#/">
+                                        <img src="img/logo_paypal.svg" alt="Logo" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-end">
+                                <a class="btn_blue" href="#/">Export All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end billing-->
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg modal_cancel" id="cancel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="b-b d-flex justify-content-between">
+                    <h3 class="title">Cancel your LimeVPN Subscription</h3>
+                    <a href="#/" data-dismiss="modal" aria-label="Close">
+                        <img src="img/icon_cancel_close.svg" alt="Icon" />
+                    </a>
+                </div>
+                <div class="b-b">
+                    <p class="font-16">We are sad to see you go. Please take a moment to tell us
+                        why you want to cancel your account</p>
+                </div>
+                <div class="b-b">
+                    <select>
+                        <option selected disabled>*Reason for cancelling your account</option>
+                        <option>First reason</option>
+                        <option>Second reason</option>
+                    </select>
+                </div>
+                <div class="b-b pb-2">
+                    <textarea placeholder="Any other feedback?"></textarea>
+                </div>
+                <div class="b-b">
+                    <p class="font-14">By clicking <b>Cancel Subscription</b> below, you are confirming the
+                        cancellation and deletion of your account. LimeVPN powdered
+                        VPN system acress all integrated products will stop working and
+                        this will cause an irreversable deletion of your account data
+                        including call records.</p>
+                </div>
+                <div class="w-100 text-center">
+                    <a class="btn_orange" href="#/">Cancel Subscription</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

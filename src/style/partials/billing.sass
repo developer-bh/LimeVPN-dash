@@ -1,0 +1,239 @@
+// Billing
+
+.billing
+  padding-bottom: 50px
+
+.billing_table
+  .box
+    padding: 30px 40px
+    nav
+      .nav
+        border-radius: 4px
+        border: 1px solid $color_blue
+        background-color: white
+        margin-bottom: 60px
+        .nav-item
+          border: 0
+          margin-bottom: 0
+          width: 33.3%
+          text-align: center
+          color: $color_blue
+          font-size: 20px
+          font-weight: 600
+          padding: 16px 5px
+          border-radius: 0
+          &.active
+            background-color: $color_blue
+            color: white
+    .table
+      margin-bottom: 60px
+      thead
+        border-bottom: 1px solid #d2eef9
+        th
+          border: 0
+          color: #283238
+          font-size: 21px
+          font-weight: 500
+      tbody
+        tr
+          padding: 5px 0
+          th, td
+            border: 0
+          th
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 22px 5px
+          td
+            font-size: 21px
+            font-weight: 400
+            span
+              font-size: 16px
+              font-weight: 400
+            img
+              height: 20px
+              margin-left: 15px
+            a
+              color: $color_blue
+              text-decoration: none
+            &:first-of-type
+              color: #999999
+              font-size: 22px
+              font-weight: 500
+    form
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      .label_half
+        width: 49%
+      .label_four
+        width: 24%
+      label
+        width: 100%
+        color: #383838
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 40px
+        input
+          width: 100%
+          height: 55px
+          margin-top: 13px
+          border-radius: 8px
+          border: 1px solid #d2eef9
+          outline: 0
+          padding-left: 22px
+        textarea
+          width: 100%
+          height: 130px
+          resize: none
+          margin-top: 13px
+          border-radius: 8px
+          border: 1px solid #d2eef9
+          outline: 0
+        .iti
+          width: 100%
+          margin-top: 13px
+          input
+            padding-left: 52px
+      input[type="submit"]
+        width: 162px
+        height: 60px
+        border-radius: 30px
+        background-color: $color_blue
+        color: white
+        &:hover
+          color: $color_blue
+          background-color: white
+
+.billing_methods
+  ul
+    margin-bottom: 200px
+    li
+      list-style: none
+      margin: 0 18px 30px 0
+      a
+        width: 347px
+        height: 168px
+        border-radius: 4px
+        border: 1px solid #d2eef9
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: 0.3s
+        img
+          transition: 0.3s
+          opacity: 0.6
+        &:hover
+          transition: 0.3s
+          border-color: $color_blue
+          img
+            transition: 0.3s
+            opacity: 1
+  .btn_blue
+    width: 219px
+    height: 60px
+    background-color: $color_blue
+    color: white
+    &:hover
+      color: $color_blue
+      background-color: white
+
+.billing_subscribed
+  .box
+    height: 85px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 22px
+    p
+      color: #383838
+      font-size: 30px
+      font-weight: 400
+      line-height: 36px
+      margin-bottom: 0
+      b
+        color: #39b54a
+        font-weight: 400
+  .box_cancel
+    border-color: #fce0e3
+    a
+      color: #ed1c24
+      font-size: 21px
+      font-weight: 600
+      text-decoration: navajowhite
+
+.billing_active
+  display: none
+  .box
+    height: 85px
+    margin-bottom: 22px
+  p
+    margin-bottom: 0
+    color: #383838
+    font-size: 26px
+    font-weight: 500
+  a
+    font-size: 21px
+    font-weight: 600
+    transition: 0.3s
+    &:hover
+      transition: 0.3s
+      color: inherit
+      text-decoration: none
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+  &__bg
+    background-color: #d2eef9
+
+// Cancel
+
+.modal_cancel
+  .modal-dialog
+    width: 470px
+    max-width: 470px
+    .modal-content
+      border-radius: 8px
+      border: 1px solid #d2eef9
+    .modal-body
+      padding: 0
+      .b-b
+        padding: 20px 40px
+      h3
+        color: #383838
+        font-size: 20px
+        font-weight: 600
+      p
+        color: #283238
+        font-weight: 400
+      select
+        width: 100%
+        color: #b3b3b3
+        font-size: 16px
+        font-weight: 400
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        border: 0
+        border-radius: 0
+        outline: 0
+        cursor: pointer
+        background: url('../img/icon_cancel_arrow.svg') 100% / 5% no-repeat transparent
+      textarea
+        width: 100%
+        height: 35px
+        border: 0
+        color: #b3b3b3
+        font-size: 16px
+        font-weight: 400
+        resize: none
+        outline: 0
+        &::placeholder
+          color: #b3b3b3
+          font-size: 16px
+          font-weight: 400
+      .btn_orange
+        width: 180px
+        height: 44px
+        margin: 20px auto

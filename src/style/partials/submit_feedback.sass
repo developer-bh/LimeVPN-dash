@@ -1,0 +1,92 @@
+// Submit feedback
+
+.feedback
+  padding-bottom: 50px
+  .s_title
+    margin-bottom: 45px
+  .box
+    padding: 70px
+    &:first-of-type
+      margin-bottom: 55px
+
+.feedback_item
+  margin-bottom: 65px
+  &:last-child
+    margin-bottom: 0
+  .title
+    color: black
+    font-size: 24px
+    font-weight: 600
+    line-height: 28.8px
+    margin-bottom: 30px
+    position: relative
+    display: flex
+    align-items: center
+    padding-left: 60px
+    &:before
+      position: absolute
+      content: ''
+      left: 0
+      width: 14px
+      height: 14px
+      background-color: #383838
+      border-radius: 50%
+  ul
+    padding: 0 0 0 60px
+    margin: 0
+    list-style: none
+    li
+      margin-right: 60px
+      &:last-child
+        margin-right: 0
+      a
+        text-decoration: none
+        img
+          &:first-child
+            display: block
+          &:nth-child(2)
+            display: none
+        &:hover
+          img
+            &:first-child
+              display: none
+            &:nth-child(2)
+              display: block
+        &.active
+          img
+            &:first-child
+              display: none
+            &:nth-child(2)
+              display: block
+
+.feedback_comment
+  display: flex
+  justify-content: flex-end
+  flex-wrap: wrap
+  textarea
+    width: 100%
+    color: black
+    font-size: 24px
+    font-weight: 600
+    line-height: 28.8px
+    border: 0
+    min-height: 60px
+    resize: none
+    margin-bottom: 25px
+    padding: 22px
+    &::placeholder
+      color: black
+      font-size: 24px
+      font-weight: 600
+      line-height: 28.8px
+    &:focus
+      outline: 0
+      border: 1px solid #d2eef9
+  input[type="submit"]
+    width: 253px
+    height: 61px
+    background-color: $color_blue
+    color: white
+    &:hover
+      background-color: white
+      color: $color_blue

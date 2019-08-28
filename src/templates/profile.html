@@ -1,0 +1,163 @@
+<!--begin header nav-->
+<section class="header_nav">
+    <div class="container">
+        <div class="row">
+            <ul class="d-flex justify-content-center m-0 p-0 w-100">
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="billing.html">Billng</a>
+                </li>
+                <li>
+                    <a href="how_to_use.html">How to use</a>
+                </li>
+                <li>
+                    <a href="rewards.html">Rewards</a>
+                </li>
+                <li>
+                    <a href="support.html">Support</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--end header nav-->
+<!--begin profile-->
+<section class="profile">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="box">
+                    <h3 class="title">Login Details</h3>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-email-tab" data-toggle="tab" href="#nav-email" role="tab" aria-controls="nav-email" aria-selected="true">Update Email</a>
+                            <a class="nav-item nav-link" id="nav-password-tab" data-toggle="tab" href="#nav-password" role="tab" aria-controls="nav-password" aria-selected="false">Update Password</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-email" role="tabpanel" aria-labelledby="nav-email-tab">
+                            <form>
+                                <label for="current_email">
+                                    Your Current email is
+                                    <input class="focused" id="current_email" type="email" placeholder="name@company.com" readonly>
+                                </label>
+                                <label for="new_email">
+                                    New Email
+                                    <input id="new_email" type="email">
+                                </label>
+                                <label for="confirm_email">
+                                    Confirm Email
+                                    <input id="confirm_email" type="email">
+                                </label>
+                            </form>
+                            <p>WARNING: Verify your information before saving changes. Mistakes to your login credentials
+                                could lock you out of your account.</p>
+                            <input type="submit" class="btn_blue" value="Save Changes" data-toggle="modal" data-target="#save_email">
+                        </div>
+                        <div class="tab-pane fade" id="nav-password" role="tabpanel" aria-labelledby="nav-password-tab">
+                            <form>
+                                <label for="current_password">
+                                    Your Current Password
+                                    <input id="current_password" type="password">
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                </label>
+                                <label for="new_password">
+                                    New Password
+                                    <input id="new_password" type="password">
+                                </label>
+                                <label for="confirm_password">
+                                    Confirm Password
+                                    <input id="confirm_password" type="password">
+                                </label>
+                            </form>
+                            <p>WARNING: Verify your information before saving changes. Mistakes to your login credentials
+                                could lock you out of your account.</p>
+                            <input type="submit" class="btn_blue" value="Save Changes" data-toggle="modal" data-target="#save_password">
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <form>
+                                <label class="label_half" for="first_name">
+                                    First name
+                                    <input class="focused" id="first_name" type="text">
+                                </label>
+                                <label class="label_half" for="last_name">
+                                    Last name
+                                    <input class="focused" id="last_name" type="text">
+                                </label>
+                                <label for="phone">
+                                    Contact no.
+                                    <input class="focused" id="phone" type="tel">
+                                </label>
+                                <label for="country">
+                                    Country
+                                    <select class="focused form-control" id="country">
+                                        <option disabled selected>Choose country</option>
+                                        <option>USA</option>
+                                        <option>Italy</option>
+                                    </select>
+                                </label>
+                            </form>
+                            <p>WARNING: Verify your information before saving changes. Mistakes to your login credentials
+                                could lock you out of your account.</p>
+                            <input type="submit" class="btn_blue" value="Save Changes" data-toggle="modal" data-target="#save_profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end profile-->
+<!--begin modal-->
+<div class="modal fade bd-example-modal-lg modal_save" id="save_email" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="title">
+                    <img src="img/icon_save.svg" alt="Icon" />
+                    Email Updated Successfully
+                </h3>
+                <p>You have successfully updated  your email. Please check your mailbox to confirm your email</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg modal_save" id="save_password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="title">
+                    <img src="img/icon_save.svg" alt="Icon" />
+                    Password Updated Successfully
+                </h3>
+                <p>You have successfully updated  your password. Please check your mailbox to confirm your password</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg modal_save" id="save_profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="title">
+                    <img src="img/icon_save.svg" alt="Icon" />
+                    Profile Updated Successfully
+                </h3>
+                <p>You have successfully updated  your profile. Please check your mailbox to confirm your profile</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->

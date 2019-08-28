@@ -1,0 +1,140 @@
+// Support
+
+.support
+  padding-bottom: 50px
+
+.support_help
+  min-height: 315px
+  margin-bottom: 45px
+  .box
+    padding: 45px 55px 25px 55px
+  &__img
+    margin-bottom: 20px
+  &__info
+    .title
+      color: #383838
+      font-size: 40px
+      font-weight: 500
+      line-height: 42.17px
+      margin-bottom: 20px
+    input[type="search"]
+      color: #ccc
+      font-size: 26px
+      font-weight: 400
+      width: 100%
+      height: 60px
+      border-radius: 10px
+      border: 1px solid #d2eef9
+      padding-left: 25px
+      margin-bottom: 45px
+      outline: 0
+      &::placeholder
+        color: #ccc
+        font-size: 26px
+        font-weight: 400
+  &__btns
+    a
+      width: 210px
+      height: 51px
+      text-decoration: none
+
+.support_ticket
+  min-height: 315px
+  margin-bottom: 45px
+  .box
+    height: 100%
+    transition: 0.3s
+    &:hover
+      transition: 0.3s
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1)
+      border: 1px solid rgba(210, 238, 249, 0)
+    a
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      color: #999
+      font-size: 40px
+      font-weight: 700
+      line-height: 60px
+      text-decoration: none
+
+.support_table
+  .table
+    margin-bottom: 60px
+    thead
+      border-bottom: 1px solid #d2eef9
+      th
+        border: 0
+        color: #283238
+        font-size: 21px
+        font-weight: 500
+    tbody
+      tr
+        padding: 5px 0
+        th, td
+          border: 0
+        th
+          display: flex
+          align-items: center
+          justify-content: center
+          padding: 22px 5px
+          span
+            display: block
+            width: 14px
+            height: 15px
+            border-radius: 7px
+            background-color: $color_blue
+        td
+          font-size: 21px
+          font-weight: 400
+          &:first-of-type
+            color: #999999
+            font-size: 22px
+            font-weight: 500
+
+.modal_support
+  .modal-content
+    border: 0
+    border-radius: 11px
+  .modal-body
+    border: 1px solid #d2eef9
+    border-radius: 11px
+    padding: 65px 50px
+    .title
+      color: #383838
+      font-size: 30px
+      font-weight: 500
+      margin-bottom: 30px
+    form
+      display: flex
+      justify-content: flex-end
+      flex-wrap: wrap
+      label
+        color: #383838
+        font-size: 22px
+        font-weight: 400
+        margin-bottom: 30px
+        width: 100%
+        input, textarea
+          width: 100%
+          margin-top: 15px
+          border-radius: 7px
+          border: 1px solid #d2eef9
+        input
+          height: 61px
+          padding-left: 22px
+        textarea
+          padding: 15px 22px
+          min-height: 165px
+          resize: none
+      input[type="submit"]
+        width: 210px
+        height: 51px
+        color: white
+        background-color: $color_blue
+        margin-top: 60px
+        &:hover
+          color: $color_blue
+          background-color: white

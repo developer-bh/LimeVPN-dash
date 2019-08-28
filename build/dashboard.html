@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <title>LimeVPN</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Fonts-->
+    <link rel="stylesheet" type="text/css" href="../build/fonts/fonts.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../build/bower_comp/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../build/bower_comp/components-font-awesome/css/all.css" />
+    <!-- endbower -->
+</head>
+<body>
+
+<!--begin header-->
+<div class="header__notification">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-md-8">
+                <p class="font-weight-600 font_20">Your trial will expire soon. Upgrade your plan for a better internet experience...</p>
+            </div>
+            <div class="col-6 col-md-4 d-flex align-items-center justify-content-end">
+                <a class="btn_white" href="plans.html">Upgrade Now</a>
+                <a class="notification_close" href="#/"><img src="img/icon_close.svg" alt="Icon" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="header">
+    <div class="container-fluid">
+        <div class="row justify-content-between">
+            <div class="col-6 col-md-6">
+                <a href="/">
+                    <img src="img/logo_white.svg" alt="Logo" />
+                </a>
+            </div>
+            <div class="col-6 col-md-6 d-flex align-items-center justify-content-end">
+                <a class="btn_white btn_upgrade" href="#/">
+                    <img src="img/icon_upgrade.svg" alt="Icon" />
+                    Upgrade Now
+                </a>
+                <div class="dropdown dropdown_notification show">
+                    <a class="btn_notification dropdown-toggle" href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/icon_notification.svg" alt="Icon" />
+                        <span>2</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="notification">
+                       <h3 class="title">Notifications</h3>
+                        <ul class="p-0 m-0">
+                            <li>
+                                <img class="icon_notification" src="img/icon_botification_black.svg" alt="Icon" />
+                                <p><b>Lorem ipsum dolor sit amet, consectetuer</b> adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim</p>
+                                <a class="icon_close" href="#/"><img src="img/icon_close_notification.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <img class="icon_notification" src="img/icon_botification_black.svg" alt="Icon" />
+                                <p><b>Lorem ipsum dolor sit amet, consectetuer</b> adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim</p>
+                                <a class="icon_close" href="#/"><img src="img/icon_close_notification.svg" alt="Icon" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown dropdown_profile show">
+                    <a class="btn_profile btn btn-secondary dropdown-toggle" href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hello, alpha@yhgh.com
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profile">
+                        <a class="dropdown-item" href="profile.html">
+                            <img src="img/icon_profile.svg" alt="Icon" />
+                            <img src="img/icon_profile_blue.svg" alt="Icon" />
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="submit_feedback.html">
+                            <img src="img/icon_feedback.svg" alt="Icon" />
+                            <img src="img/icon_feedback_blue.svg" alt="Icon" />
+                            Submit feedback
+                        </a>
+                        <a class="dropdown-item" href="network_status.html">
+                            <img src="img/icon_network.svg" alt="Icon" />
+                            <img src="img/icon_network_blue.svg" alt="Icon" />
+                            Network status
+                        </a>
+                        <a class="dropdown-item" href="tutorials.html">
+                            <img src="img/icon_tutorials.svg" alt="Icon" />
+                            <img src="img/icon_tutorials_blue.svg" alt="Icon" />
+                            Tutorials
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/icon_signout.svg" alt="Icon" />
+                            <img src="img/icon_signout_blue.svg" alt="Icon" />
+                            Signout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--end header-->
+
+<!--begin header nav-->
+<section class="header_nav">
+    <div class="container">
+        <div class="row">
+            <ul class="d-flex justify-content-center m-0 p-0 w-100">
+                <li class="active">
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="billing.html">Billng</a>
+                </li>
+                <li>
+                    <a href="how_to_use.html">How to use</a>
+                </li>
+                <li>
+                    <a href="rewards.html">Rewards</a>
+                </li>
+                <li>
+                    <a href="support.html">Support</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--end header nav-->
+<!--begin dashboard-->
+<section class="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="box plan_details b-b">
+                    <div class="plan_details__top d-flex justify-content-between align-items-center n b-b">
+                        <p class="font_20 mb-0 font_20 color_d_grey font-weight-600">Plan Details</p>
+                        <span class="plan_details__name">
+                            <img src="img/icon_limevpn_basic.svg" alt="Icon" />
+                            LimeVPN Basic
+                        </span>
+                    </div>
+                    <ul class="plan_details__list m-0">
+                        <li class="b-b">
+                            <p><b>VPN user name</b></p>
+                            <p>alfa01234</p>
+                        </li>
+                        <li class="b-b">
+                            <p><b>VPN Password</b></p>
+                            <p>**********</p>
+                        </li>
+                        <li class="b-b">
+                            <p><b>Devices:</b></p>
+                            <p>0 of 5 available Devices</p>
+                        </li>
+                        <li>
+                            <p><b>Renewal Date:</b></p>
+                            <p>August 15, 2019</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="box plan_graph b-b">
+                    <div class="plan_graph__top d-flex justify-content-between b-b">
+                        <p class="font_20 mb-0 font_20 color_d_grey font-weight-600">Usage for the last 30 days</p>
+                        <a class="font_18 color_blue font-weight-500" href="#/">Detailed Usage</a>
+                    </div>
+                    <canvas id="myChart" width="100%" height="350"></canvas>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="box plan_announcement plan_graph b-b">
+                    <div class="plan_announcement__top d-flex justify-content-between b-b">
+                        <p class="font_20 mb-0 font_20 color_d_grey font-weight-600">Announcement’s</p>
+                    </div>
+                    <form class="plan_announcement__checkboxes">
+                        <div class="form-check pl-0">
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                                <p><b>Lorem ipsum dolor sit amet,</b> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                                <p><b>Lorem ipsum dolor sit amet,</b> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                                <p><b>Lorem ipsum dolor sit amet,</b> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                                <p><b>Lorem ipsum dolor sit amet,</b> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                                <p><b>Lorem ipsum dolor sit amet,</b> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="box plan_how plan_graph b-b">
+                    <div class="plan_how__top d-flex justify-content-between b-b">
+                        <p class="font_20 mb-0 font_20 color_d_grey font-weight-600">How to use <span>( tutorials and Download)</span></p>
+                    </div>
+                    <div class="plan_how__list d-flex justify-content-between">
+                        <ul class="p-0 m-0 text-center">
+                            <h3 class="title text-center font_18">Desktop</h3>
+                            <li>
+                                <a href="#/"><img src="img/icon_windows.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_macos.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_penguin.svg" alt="Icon" /></a>
+                            </li>
+                        </ul>
+                        <ul class="p-0 m-0 text-center">
+                            <h3 class="title text-center font_18">Mobile</h3>
+                            <li>
+                                <a href="#/"><img src="img/icon_ios.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_android.svg" alt="Icon" /></a>
+                            </li>
+                        </ul>
+                        <ul class="p-0 m-0 text-center">
+                            <h3 class="title text-center font_18">Devices / Browser</h3>
+                            <li>
+                                <a href="#/"><img src="img/icon_chrome.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_vpn.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_playstation.svg" alt="Icon" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end dashboard-->
+<!--begin modals-->
+<div class="modal bd-example-modal-lg modal_tutorial" id="tutorial" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex align-items-center justify-content-between">
+                <h5 class="modal-title">Learn how to use Lime Vpn</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">Skip</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="100%" height="445" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>A video tutorial to help you understand how to use Lime VPN</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--end modals-->
+
+<!-- bower:js -->
+<script src="../build/bower_comp/jquery/dist/jquery.js"></script>
+<script src="../build/bower_comp/popper.js/dist/umd/popper.js"></script>
+<script src="../build/bower_comp/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../build/bower_comp/chart.js/dist/Chart.js"></script>
+<!-- endbower -->
+<!-- Scripts -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

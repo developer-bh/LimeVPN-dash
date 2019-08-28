@@ -1,0 +1,99 @@
+// How_to_use
+
+.how_to_use
+  padding-bottom: 50px
+  &__list
+    margin-top: 100px
+    list-style: none
+    li
+      padding: 40px 30px
+      margin-bottom: 25px
+      a
+        img
+          opacity: 0.5
+          transition: 0.3s
+        &:hover
+          transition: 0.3s
+          img
+            opacity: 1
+      &.active
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1)
+        border: 1px solid rgba(210, 238, 249, 0)
+        a
+          img
+            opacity: 1
+
+.htu_list_item
+  display: none
+  padding-top: 75px
+  .title
+    color: #808080
+    font-size: 26px
+    font-weight: 600
+    line-height: 30.79px
+    margin-bottom: 22px
+
+.htu_choose
+  &__item
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: 55px
+    .title
+      color: #808080
+      font-size: 20px
+      font-weight: 400
+      line-height: 30.79px
+      margin: 0 30px 0 0
+    ul
+      list-style: none
+      display: flex
+      li
+        padding: 0
+        margin-left: 13px
+        a
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 114px
+          height: 54px
+          border-radius: 4px
+          border: 1px solid #d2eef9
+          color: #b3b3b3
+          font-size: 20px
+          font-weight: 400
+          line-height: 30.79px
+          text-decoration: none
+          transition: 0.3s
+          &:hover
+            transition: 0.3s
+            background-color: $color_blue
+            color: white
+
+.htu_tutorials
+  ul
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    li
+      padding: 0
+      margin: 0 27px 27px 0
+      a
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 350px
+        max-width: 100%
+        height: 54px
+        border-radius: 4px
+        border: 1px solid #d2eef9
+        color: #b3b3b3
+        font-size: 20px
+        font-weight: 400
+        line-height: 30.79px
+        text-decoration: none
+        transition: 0.3s
+        &:hover
+          transition: 0.3s
+          background-color: $color_blue
+          color: white

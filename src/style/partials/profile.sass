@@ -1,0 +1,154 @@
+// Profile
+
+.profile
+  padding-bottom: 50px
+  .box
+    width: 970px
+    max-width: 100%
+    margin: 0 auto
+    padding: 30px 45px 75px 45px
+    .title
+      color: $color_d_grey
+      font-size: 20px
+      font-weight: 600
+      margin-bottom: 32px
+    nav
+      .nav
+        border-radius: 4px
+        border: 1px solid $color_blue
+        background-color: white
+        margin-bottom: 60px
+        .nav-item
+          border: 0
+          margin-bottom: 0
+          width: 33.3%
+          text-align: center
+          color: $color_blue
+          font-size: 20px
+          font-weight: 600
+          padding: 16px 5px
+          border-radius: 0
+          &.active
+            background-color: $color_blue
+            color: white
+    .tab-content
+      form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+      .label_half
+        display: inline-block
+        width: 49%
+        max-width: 100%
+      label
+        position: relative
+        width: 100%
+        color: #383838
+        font-size: 22px
+        font-weight: 400
+        margin-bottom: 55px
+        select
+          background: url('../img/icon_select.svg') 96% / 15% no-repeat #eee
+          background-size: 20px
+        input, select
+          width: 100%
+          height: 61px
+          border-radius: 3px
+          border: 0
+          border-bottom: 1px solid $color_grey
+          background-color: white
+          margin-top: 20px
+          outline: 0
+          padding: 0 22px
+          color: #b3b3b3
+          font-size: 30px
+          font-weight: 400
+          transition: 0.3s
+          appearance: none
+          &::placeholder
+            color: #b3b3b3
+            font-size: 30px
+            font-weight: 400
+          &:focus
+            transition: 0.3s
+            outline: 0
+            border: 1px solid #d2eef9
+          &.focused
+            border: 1px solid #d2eef9
+        .iti
+          width: 100%
+          margin-top: 20px
+          input
+            padding-left: 60px
+        .field-icon
+          position: absolute
+          right: 15px
+          bottom: 15px
+          color: #b3b3b3
+          z-index: 2
+      .tab-pane
+        p
+          width: 645px
+          max-width: 100%
+          margin: 0 auto
+          text-align: center
+          color: #b3b3b3
+          font-size: 16px
+          font-weight: 400
+          line-height: 19.2px
+          margin-bottom: 95px
+        input[type="submit"]
+          font-size: 20px
+          width: 376px
+          height: 61px
+          margin: 0 auto
+          border-radius: 30px
+
+.modal_save
+  .modal-dialog
+    max-width: 100%
+  .modal-content
+    width: 1054px
+    max-width: 100%
+    margin: 0 auto
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+    border-radius: 13px
+    background-color: white
+  .modal-body
+    padding: 55px 80px
+    .title
+      display: flex
+      align-items: center
+      color: #383838
+      font-size: 40px
+      font-weight: 400
+      line-height: 60px
+      margin-bottom: 50px
+      img
+        margin-right: 65px
+    p
+      color: #383838
+      font-size: 28px
+      font-weight: 400
+      line-height: 50px
+      margin-bottom: 15px
+    .close
+      text-align: right
+      opacity: 1
+      text-shadow: none
+      transition: 0.3s
+      outline: 0
+      &:hover
+        transition: 0.3s
+      span
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 162px
+        height: 61px
+        border-radius: 30px
+        background-color: $color_blue
+        color: white
+        font-size: 20px
+        font-weight: 700
+        line-height: initial
