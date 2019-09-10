@@ -1,28 +1,35 @@
 <!--begin signup-->
 <section class="signup">
     <div class="row height_100vh">
-        <div class="signup__item col-12 col-md-6 d-flex justify-content-center align-items-end flex-column">
-            <h1 class="text-right signup__title mb-5">Say goodbye to blocked <br> websites and content</h1>
+        <div class="signup__item col-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-end flex-column">
+            <div class="signup__logo text-center d-flex d-md-flex d-lg-none justify-content-center">
+                <a href="/"><img class="logo" src="img/logo_limevpn.svg" alt="Logo" /></a>
+            </div>
+            <h1 class="text-right signup__title text-center text-md-center text-lg-left">Say goodbye to blocked <br> websites and content</h1>
             <img src="img/img_signup.png" alt="Image" />
         </div>
-        <div class="signup__item col-12 col-md-6 d-flex justify-content-center align-items-start flex-column">
-            <img class="logo" src="img/logo_limevpn.svg" alt="Logo" />
-            <a href="#/">
+        <div class="signup__item col-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-start flex-column">
+            <a href="/"><img class="logo d-none d-md-none d-lg-block" src="img/logo_limevpn.svg" alt="Logo" /></a>
+            <p class="signup__text font_16 color_grey d-block d-md-block d-lg-none text-center text-md-center text-lg-left">Sign In using...</p>
+            <a class="m-auto m-md-auto m-lg-0" href="#/">
                 <img class="btn_google" src="img/btn_google.png" alt="Google" />
             </a>
-            <p class="signup__text font_24 color_grey">Or use your work email to sign in</p>
-            <form class="signup__form">
+            <p class="signup__text font_16 color_grey text-center text-md-center text-lg-left">Or sign in via your email...</p>
+            <form class="signup__form signin__form">
                 <label for="signup_email" class="color_blue">
                     Email
                     <input id="signup_email" type="email" placeholder="name@company.com">
                 </label>
-                <label for="signup_email" class="color_blue">
+                <label for="signup_password" class="color_blue">
                     Password
-                    <input id="signup_password" type="password" placeholder="**********">
+                    <input id="signup_password" class="show_pass" type="password" placeholder="**********">
+                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                 </label>
-                <input class="btn_blue" type="submit" value="Sign In">
+                <input class="btn_blue d-none d-md-none d-lg-block" type="submit" value="Sign In">
+                <p class="mob_btn btn_grey d-flex d-md-flex d-lg-none">Dont have an account, <a href="signup.html"> Sign up.</a></p>
+                <input class="mob_btn btn_blue d-block d-md-block d-lg-none" type="submit" value="Sign In">
             </form>
-            <p class="font_20 color_grey">Dont have an account? <a class="color_blue" href="signup.html">Sign up.</a></p>
+            <p class="font_14 color_grey d-none d-md-none d-lg-block">Dont have an account? <a class="color_blue" href="signup.html">Sign up.</a></p>
         </div>
     </div>
 </section>

@@ -5,6 +5,7 @@
 
 img
   max-width: 100%
+  height: auto
 
 .hide
   display: none
@@ -14,10 +15,16 @@ img
 .height_100vh
   height: 100vh
 
-.font-14
+.font_10
+  font-size: 10px
+
+.font_12
+  font-size: 12px
+
+.font-14, .font_14
   font-size: 14px
 
-.font-16
+.font-16, .font_16
   font-size: 16px
 
 .font_18
@@ -87,11 +94,12 @@ $color_red: #ed1c24
   align-items: center
   justify-content: center
   color: $color_blue
-  font-size: 19px
+  font-size: 13px
   font-weight: 700
-  line-height: 22.8px
+  line-height: 15px
   border-radius: 30px
   border: 1px solid $color_blue
+  background-color: white
   transition: 0.3s
   outline: 0
   &:hover
@@ -105,7 +113,7 @@ $color_red: #ed1c24
   align-items: center
   justify-content: center
   color: white
-  font-size: 16px
+  font-size: 13px
   font-weight: 600
   border-radius: 7px
   border: 1px solid white
@@ -124,7 +132,7 @@ $color_red: #ed1c24
   align-items: center
   justify-content: center
   color: #f15a24
-  font-size: 16px
+  font-size: 13px
   font-weight: 400
   border-radius: 21px
   border: 1px solid #f15a24
@@ -138,10 +146,30 @@ $color_red: #ed1c24
     color: white
     text-decoration: none
 
+.btn_grey
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: #999999
+  background-color: #f2f2f2
+  font-size: 16px
+  font-weight: 400
+  border-radius: 21px
+  border: 1px solid #f2f2f2
+  text-decoration: none
+  transition: 0.3s
+  outline: 0
+  &:hover
+    transition: 0.3s
+    background-color: #f2f2f2
+    border-color: white
+    color: #999999
+    text-decoration: none
+
 // Classes
 
 .box
-  border-radius: 5px
+  border-radius: 8px
   border: 1px solid #d2eef9
 
 .b-b
@@ -149,9 +177,8 @@ $color_red: #ed1c24
 
 .s_title
   color: #383838
-  font-size: 40px
+  font-size: 27px
   font-weight: 500
-  line-height: 50px
 
 // Checkboxes
 
@@ -164,6 +191,7 @@ $color_red: #ed1c24
     p
       width: 90%
       max-width: 100%
+      margin-bottom: 10px
     b
       color: #616161
       font-weight: 700
@@ -181,14 +209,17 @@ $color_red: #ed1c24
     position: relative
     display: inline-block
     border: 1px solid #d2eef9
-    border-radius: .25em
-    width: 1.3em
-    height: 1.3em
+    border-radius: 3px
+    width: 13px
+    height: 13px
     float: left
-    margin-right: 17px
+    margin: 3px 11px 0 0
     .cr-icon
       position: absolute
-      font-size: .8em
+      font-size: 9px
       line-height: 0
       top: 50%
       left: 15%
+
+.fa, .fas
+  font-family: 'Font Awesome 5 Free'!important

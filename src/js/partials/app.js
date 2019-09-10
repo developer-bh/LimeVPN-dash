@@ -1,5 +1,43 @@
 $(document).ready(function() {
 
+    // Remove hover on touch devices
+
+    (function addPointerClasses() {
+        var is_touch_event = false;
+
+        function hasMouse() {
+            if(is_touch_event === false) {
+                document.documentElement.classList.add('mouse');
+                document.body.removeEventListener('mousemove', hasMouse);
+            }
+        }
+
+        document.body.addEventListener('mousemove', hasMouse);
+
+        document.body.addEventListener('touchstart', function ()  {
+            is_touch_event = true;
+        });
+        document.body.addEventListener('touchend', function ()  {
+            is_touch_event = false;
+        });
+        document.body.addEventListener('click', function ()  {
+            if(is_touch_event) is_touch_event = false;
+        });
+
+        function isTouchDevice() {
+            try {
+                document.createEvent('TouchEvent');
+                return true;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        if(isTouchDevice()) {
+            document.documentElement.classList.add('touch');
+        }
+    })();
+
     // Phone
 
     window.onload = function() {var input = document.querySelector("#phone"); window.intlTelInput(input);};
@@ -8,6 +46,12 @@ $(document).ready(function() {
 
     $('.notification_close').on('click', function () {
         $('.header__notification').slideUp();
+    });
+
+    // Hamburger
+
+    $('#mob_nav').on('click', function () {
+       $(this).toggleClass('active');
     });
 
     // Steps tabs
@@ -22,7 +66,7 @@ $(document).ready(function() {
 
     // Steps choose
 
-    $('.steps__choose li a').on('click', function () {
+    $('.steps__choose li').on('click', function () {
         $(this).toggleClass('active');
     });
 
@@ -34,6 +78,14 @@ $(document).ready(function() {
     $('.steps__instructions li a').on('click', function () {
         $('.steps__instructions li a').removeClass('active');
         $(this).toggleClass('active');
+    });
+
+    // Chart open
+
+    $('.chart_open').on('click', function () {
+        $(this).toggleClass('rotate');
+        $('.chart__content').slideToggle();
+        $('.plan_graph__top').toggleClass('b-b');
     });
 
     // Submit feedback active
@@ -68,7 +120,7 @@ $(document).ready(function() {
 
     $(".toggle-password").click(function() {
         $(this).toggleClass("fa-eye fa-eye-slash");
-        var input = $('#current_password');
+        var input = $('.show_pass');
         if (input.attr("type") == "password") {
             input.attr("type", "text");
         } else {
@@ -95,18 +147,26 @@ $(document).ready(function() {
     // Billing
 
     $('#nav-home-tab').on('click', function () {
-       $('.billing_subscribed').show();
-       $('.billing_active').hide();
+       $('.billing_subscribed').hide();
+       $('.billing_active').show();
     });
 
     $('#nav-profile-tab').on('click', function () {
-        $('.billing_subscribed').hide();
-        $('.billing_active').show();
+        $('.billing_subscribed').show();
+        $('.billing_active').hide();
     });
 
     $('#nav-contact-tab').on('click', function () {
-        $('.billing_subscribed').hide();
-        $('.billing_active').show();
+        $('.billing_subscribed').show();
+        $('.billing_active').hide();
+    });
+
+    $('.billing_check .cr').on('click', function () {
+        $('.billing_pay_meth').slideToggle();
+    });
+
+    $('.plans_method__check .cr').on('click', function () {
+        $('.plans_info__select').slideToggle();
     });
 
     // Billing payment
@@ -114,6 +174,23 @@ $(document).ready(function() {
     $('.professional_billing ul li a').on('click', function () {
         $('.professional_billing ul li a').removeClass('active');
         $(this).addClass('active');
+    });
+
+    // Billing mobile
+
+    $('.accordion_arrow').on('click', function () {
+        $('.billing_accordion').removeClass('active');
+        $(this).parent('.billing_accordion').addClass('active');
+        $(this).parent('.billing_accordion').find('.accordion_hidden').slideToggle();
+    });
+
+    $('.plans_info__select a').on('click', function () {
+        $('.plans_info__select a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.plans_method__card').on('click', function () {
+        $('.plans_method__check').slideToggle();
     });
 
     // Chart
@@ -132,7 +209,7 @@ $(document).ready(function() {
                     backgroundColor: 'transparent',
                     pointBackgroundColor: '#fff',
                     pointBorderColor: '#2693ff',
-                    pointRadius: 8,
+                    pointRadius: 4,
                     borderColor: '#e6e6e6',
                     data: [0, 10, 5, 2, 20]
                 }]
@@ -148,7 +225,7 @@ $(document).ready(function() {
                         },
                         ticks: {
                             fontColor: "#808080",
-                            fontSize: 16,
+                            fontSize: 11,
                             top: 25
                         }
                     }],
@@ -160,6 +237,79 @@ $(document).ready(function() {
                         ticks: {
                             display: false
                         }
+                    }]
+                }
+            }
+        });
+    });
+
+    Chart.Legend.prototype.afterFit = function() {
+        this.height = this.height + 50;
+    };
+
+    $(function() {
+        var ctx = document.getElementById('myChart2').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['06:00', '12:00', '18:00', '24:00'],
+                datasets: [{
+                    label: 'Download',
+                    yAxisID: 'A',
+                    backgroundColor: 'transparent',
+                    pointBackgroundColor: '#fff',
+                    pointBorderColor: '#39b54a',
+                    pointRadius: 0,
+                    borderColor: '#39b54a',
+                    borderWidth: 1,
+                    data: [1, 4, 5, 5]
+                }, {
+                    label: 'Upload',
+                    yAxisID: 'B',
+                    backgroundColor: 'transparent',
+                    pointBackgroundColor: '#fff',
+                    pointBorderColor: '#f7931e',
+                    pointRadius: 0,
+                    borderColor: '#f7931e',
+                    borderDash: [8,3],
+                    borderWidth: 1,
+                    data: [2, 4, 6, 10]
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false,
+                            drawBorder: false
+                        },
+                        ticks: {
+                            fontColor: "#808080",
+                            fontSize: 11,
+                            top: 25
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            display: false,
+                            drawBorder: false
+                        },
+                        ticks: {
+                            display: false
+                        },
+                        id: 'A',
+                        type: 'linear'
+                    }, {
+                        gridLines: {
+                            display: false,
+                            drawBorder: false
+                        },
+                        ticks: {
+                            display: false
+                        },
+                        id: 'B',
+                        type: 'linear'
                     }]
                 }
             }
@@ -200,7 +350,7 @@ $(document).ready(function() {
     // Plan modal wizard
 
     $(function() {
-        $("#professional").modalWizard();
+        $("#professional_monthly").modalWizard();
     });
 
 });

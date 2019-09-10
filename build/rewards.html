@@ -21,11 +21,11 @@
 <!--begin header-->
 <div class="header__notification">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-6 col-md-8">
-                <p class="font-weight-600 font_20">Your trial will expire soon. Upgrade your plan for a better internet experience...</p>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-8 col-lg-8">
+                <p class="font-weight-600">Your trial will expire soon. Upgrade your plan for a better internet experience...</p>
             </div>
-            <div class="col-6 col-md-4 d-flex align-items-center justify-content-end">
+            <div class="col-12 col-md-4 col-lg-4 d-flex align-items-center justify-content-end">
                 <a class="btn_white" href="plans.html">Upgrade Now</a>
                 <a class="notification_close" href="#/"><img src="img/icon_close.svg" alt="Icon" /></a>
             </div>
@@ -34,13 +34,13 @@
 </div>
 <header class="header">
     <div class="container-fluid">
-        <div class="row justify-content-between">
-            <div class="col-6 col-md-6">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-6 col-md-6 header__logo">
                 <a href="/">
                     <img src="img/logo_white.svg" alt="Logo" />
                 </a>
             </div>
-            <div class="col-6 col-md-6 d-flex align-items-center justify-content-end">
+            <div class="col-6 col-md-6 header__info d-flex align-items-center justify-content-end">
                 <a class="btn_white btn_upgrade" href="#/">
                     <img src="img/icon_upgrade.svg" alt="Icon" />
                     Upgrade Now
@@ -98,6 +98,64 @@
                         </a>
                     </div>
                 </div>
+                <div class="header__menu d-block d-md-block d-lg-none">
+                    <a href="#" role="button" id="mob_nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/icon_hamburger.svg" alt="Icon" />
+                        <img src="img/icon_hamburger_open.svg" alt="Icon" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="mob_nav">
+                        <a class="dropdown-item" href="dashboard.html">
+                            <img src="img/icon_dashboard.svg" alt="Icon" />
+                            <img src="img/icon_dashboard_blue.svg" alt="Icon" />
+                            Dashboard
+                        </a>
+                        <a class="dropdown-item" href="how_to_use.html">
+                            <img src="img/icon_htu.svg" alt="Icon" />
+                            <img src="img/icon_htu_blue.svg" alt="Icon" />
+                            How to use
+                        </a>
+                        <a class="dropdown-item" href="support.html">
+                            <img src="img/icon_support.svg" alt="Icon" />
+                            <img src="img/icon_support_blue.svg" alt="Icon" />
+                            Support
+                        </a>
+                        <a class="dropdown-item" href="billing.html">
+                            <img src="img/icon_billing.svg" alt="Icon" />
+                            <img src="img/icon_billing_blue.svg" alt="Icon" />
+                            Billing
+                        </a>
+                        <a class="dropdown-item" href="rewards.html">
+                            <img src="img/icon_rewards.svg" alt="Icon" />
+                            <img src="img/icon_rewards_blue.svg" alt="Icon" />
+                            Rewards
+                        </a>
+                        <a class="dropdown-item" href="profile.html">
+                            <img src="img/icon_profile.svg" alt="Icon" />
+                            <img src="img/icon_profile_blue.svg" alt="Icon" />
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="submit_feedback.html">
+                            <img src="img/icon_feedback.svg" alt="Icon" />
+                            <img src="img/icon_feedback_blue.svg" alt="Icon" />
+                            Submit feedback
+                        </a>
+                        <a class="dropdown-item" href="network_status.html">
+                            <img src="img/icon_network.svg" alt="Icon" />
+                            <img src="img/icon_network_blue.svg" alt="Icon" />
+                            Network status
+                        </a>
+                        <a class="dropdown-item" href="tutorials.html">
+                            <img src="img/icon_tutorials.svg" alt="Icon" />
+                            <img src="img/icon_tutorials_blue.svg" alt="Icon" />
+                            Tutorials
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/icon_signout.svg" alt="Icon" />
+                            <img src="img/icon_signout_blue.svg" alt="Icon" />
+                            Signout
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -113,7 +171,7 @@
                     <a href="dashboard.html">Dashboard</a>
                 </li>
                 <li>
-                    <a href="billing.html">Billng</a>
+                    <a href="billing.html">Billing</a>
                 </li>
                 <li>
                     <a href="how_to_use.html">How to use</a>
@@ -177,7 +235,7 @@
                             </div>
                         </li>
                     </ul>
-                    <h3 class="title text-center">OR</h3>
+                    <h3 class="title text-center d-none d-md-block d-lg-block">OR</h3>
                     <ul class="row p-0 justify-content-center">
                         <li class="col-12 col-md-4">
                             <div class="box">
@@ -188,14 +246,14 @@
                             </div>
                         </li>
                     </ul>
-                    <p class="text-center font_22 font-weight-normal m-0">Once you’ve invited friends, you can view the <a href="#/">status of your referrals</a> or visit our
+                    <p class="text-center font_16 font-weight-normal m-0">Once you’ve invited friends, you can view the <a href="#/">status of your referrals</a> or visit our
                         <a href="#/">Help Centre</a> if you have any questions.</p>
                 </div>
             </div>
         </div>
         <div class="row rewards__stats">
             <div class="col-12 col-md-12">
-                <h3 class="title font_30 font-weight-600 color_d_grey">Your personal Stats</h3>
+                <h3 class="title font_20 font-weight-600 color_d_grey">Rewards</h3>
                 <div class="box">
                     <table class="table">
                         <thead>
@@ -208,6 +266,13 @@
                         </tr>
                         </thead>
                         <tbody>
+                        <tr>
+                            <td>#44RT65</td>
+                            <td>Alpha@beta.com</td>
+                            <td>10/09/19 <span>(11:12:34)</span></td>
+                            <td>$12.43</td>
+                            <td class="color_orange"><b>$14.56</b></td>
+                        </tr>
                         <tr>
                             <td>#44RT65</td>
                             <td>Alpha@beta.com</td>

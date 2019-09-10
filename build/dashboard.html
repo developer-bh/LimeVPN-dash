@@ -21,11 +21,11 @@
 <!--begin header-->
 <div class="header__notification">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-6 col-md-8">
-                <p class="font-weight-600 font_20">Your trial will expire soon. Upgrade your plan for a better internet experience...</p>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-8 col-lg-8">
+                <p class="font-weight-600">Your trial will expire soon. Upgrade your plan for a better internet experience...</p>
             </div>
-            <div class="col-6 col-md-4 d-flex align-items-center justify-content-end">
+            <div class="col-12 col-md-4 col-lg-4 d-flex align-items-center justify-content-end">
                 <a class="btn_white" href="plans.html">Upgrade Now</a>
                 <a class="notification_close" href="#/"><img src="img/icon_close.svg" alt="Icon" /></a>
             </div>
@@ -34,13 +34,13 @@
 </div>
 <header class="header">
     <div class="container-fluid">
-        <div class="row justify-content-between">
-            <div class="col-6 col-md-6">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-6 col-md-6 header__logo">
                 <a href="/">
                     <img src="img/logo_white.svg" alt="Logo" />
                 </a>
             </div>
-            <div class="col-6 col-md-6 d-flex align-items-center justify-content-end">
+            <div class="col-6 col-md-6 header__info d-flex align-items-center justify-content-end">
                 <a class="btn_white btn_upgrade" href="#/">
                     <img src="img/icon_upgrade.svg" alt="Icon" />
                     Upgrade Now
@@ -98,6 +98,64 @@
                         </a>
                     </div>
                 </div>
+                <div class="header__menu d-block d-md-block d-lg-none">
+                    <a href="#" role="button" id="mob_nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/icon_hamburger.svg" alt="Icon" />
+                        <img src="img/icon_hamburger_open.svg" alt="Icon" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="mob_nav">
+                        <a class="dropdown-item" href="dashboard.html">
+                            <img src="img/icon_dashboard.svg" alt="Icon" />
+                            <img src="img/icon_dashboard_blue.svg" alt="Icon" />
+                            Dashboard
+                        </a>
+                        <a class="dropdown-item" href="how_to_use.html">
+                            <img src="img/icon_htu.svg" alt="Icon" />
+                            <img src="img/icon_htu_blue.svg" alt="Icon" />
+                            How to use
+                        </a>
+                        <a class="dropdown-item" href="support.html">
+                            <img src="img/icon_support.svg" alt="Icon" />
+                            <img src="img/icon_support_blue.svg" alt="Icon" />
+                            Support
+                        </a>
+                        <a class="dropdown-item" href="billing.html">
+                            <img src="img/icon_billing.svg" alt="Icon" />
+                            <img src="img/icon_billing_blue.svg" alt="Icon" />
+                            Billing
+                        </a>
+                        <a class="dropdown-item" href="rewards.html">
+                            <img src="img/icon_rewards.svg" alt="Icon" />
+                            <img src="img/icon_rewards_blue.svg" alt="Icon" />
+                            Rewards
+                        </a>
+                        <a class="dropdown-item" href="profile.html">
+                            <img src="img/icon_profile.svg" alt="Icon" />
+                            <img src="img/icon_profile_blue.svg" alt="Icon" />
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="submit_feedback.html">
+                            <img src="img/icon_feedback.svg" alt="Icon" />
+                            <img src="img/icon_feedback_blue.svg" alt="Icon" />
+                            Submit feedback
+                        </a>
+                        <a class="dropdown-item" href="network_status.html">
+                            <img src="img/icon_network.svg" alt="Icon" />
+                            <img src="img/icon_network_blue.svg" alt="Icon" />
+                            Network status
+                        </a>
+                        <a class="dropdown-item" href="tutorials.html">
+                            <img src="img/icon_tutorials.svg" alt="Icon" />
+                            <img src="img/icon_tutorials_blue.svg" alt="Icon" />
+                            Tutorials
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/icon_signout.svg" alt="Icon" />
+                            <img src="img/icon_signout_blue.svg" alt="Icon" />
+                            Signout
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -113,7 +171,7 @@
                     <a href="dashboard.html">Dashboard</a>
                 </li>
                 <li>
-                    <a href="billing.html">Billng</a>
+                    <a href="billing.html">Billing</a>
                 </li>
                 <li>
                     <a href="how_to_use.html">How to use</a>
@@ -136,7 +194,7 @@
             <div class="col-12 col-md-6">
                 <div class="box plan_details b-b">
                     <div class="plan_details__top d-flex justify-content-between align-items-center n b-b">
-                        <p class="font_20 mb-0 font_20 color_d_grey font-weight-600">Plan Details</p>
+                        <p class="mb-0 color_d_grey font-weight-600">Plan Details</p>
                         <span class="plan_details__name">
                             <img src="img/icon_limevpn_basic.svg" alt="Icon" />
                             LimeVPN Basic
@@ -144,37 +202,67 @@
                     </div>
                     <ul class="plan_details__list m-0">
                         <li class="b-b">
-                            <p><b>VPN user name</b></p>
-                            <p>alfa01234</p>
+                            <p class="color_d_grey"><b>VPN user name</b></p>
+                            <p class="color_grey">alfa01234</p>
                         </li>
                         <li class="b-b">
-                            <p><b>VPN Password</b></p>
-                            <p>**********</p>
+                            <p class="color_d_grey"><b>VPN Password</b></p>
+                            <p class="color_grey">**********</p>
                         </li>
                         <li class="b-b">
-                            <p><b>Devices:</b></p>
-                            <p>0 of 5 available Devices</p>
+                            <p class="color_d_grey"><b>Devices:</b></p>
+                            <p class="color_grey">0 of 5 available Devices</p>
                         </li>
                         <li>
-                            <p><b>Renewal Date:</b></p>
-                            <p>August 15, 2019</p>
+                            <p class="color_d_grey"><b>Renewal Date:</b></p>
+                            <p class="color_green"><b>August 15, 2019</b></p>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <div class="box plan_graph b-b">
+                <div class="d-none d-md-block d-lg-block box plan_graph b-b">
                     <div class="plan_graph__top d-flex justify-content-between b-b">
-                        <p class="font_20 mb-0 font_20 color_d_grey font-weight-600">Usage for the last 30 days</p>
-                        <a class="font_18 color_blue font-weight-500" href="#/">Detailed Usage</a>
+                        <p class="mb-0 color_d_grey font-weight-600">Usage for the last 30 days</p>
+                        <a class="color_blue font-weight-500" href="#/">Detailed Usage</a>
                     </div>
                     <canvas id="myChart" width="350" height="150"></canvas>
+                </div>
+                <div class="d-block d-md-none d-lg-none box plan_graph b-b">
+                    <div class="plan_graph__top d-flex justify-content-between">
+                        <p class="mb-0 color_d_grey font-weight-600">Data Usage</p>
+                        <div class="chart__numbers">
+                            <p><img src="img/arrow_chart_up.svg" alt="Arrow" />05.45 GB</p>
+                            <p><img src="img/arrow_chart_down.svg" alt="Arrow" />05.45 GB</p>
+                            <a class="chart_open" href="#/"><img src="img/icon_chart_arrow.svg" alt="Arrow" /></a>
+                        </div>
+                    </div>
+                    <div class="chart__content">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-day-tab" data-toggle="tab" href="#nav-day" role="tab" aria-controls="nav-day" aria-selected="true">Day</a>
+                                <a class="nav-item nav-link" id="nav-week-tab" data-toggle="tab" href="#nav-week" role="tab" aria-controls="nav-week" aria-selected="false">Week</a>
+                                <a class="nav-item nav-link" id="nav-month-tab" data-toggle="tab" href="#nav-month" role="tab" aria-controls="nav-month" aria-selected="false">Month</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-day" role="tabpanel" aria-labelledby="nav-dat-tab">
+                                <canvas id="myChart2"></canvas>
+                            </div>
+                            <div class="tab-pane fade" id="nav-week" role="tabpanel" aria-labelledby="nav-week-tab">
+                                2
+                            </div>
+                            <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
+                                3
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="box plan_announcement plan_graph b-b">
                     <div class="plan_announcement__top d-flex justify-content-between b-b">
-                        <p class="font_20 mb-0 font_20 color_d_grey font-weight-600">Announcement’s</p>
+                        <p class="mb-0 color_d_grey font-weight-600">Announcement’s</p>
                     </div>
                     <form class="plan_announcement__checkboxes">
                         <div class="form-check pl-0">
@@ -210,10 +298,10 @@
             <div class="col-12 col-md-6">
                 <div class="box plan_how plan_graph b-b">
                     <div class="plan_how__top d-flex justify-content-between b-b">
-                        <p class="font_20 mb-0 font_20 color_d_grey font-weight-600">How to use <span>( tutorials and Download)</span></p>
+                        <p class="mb-0 color_d_grey font-weight-600">How to use <span>( tutorials and Download)</span></p>
                     </div>
-                    <div class="plan_how__list d-flex justify-content-between">
-                        <ul class="p-0 m-0 text-center">
+                    <div class="plan_how__list d-none d-md-none d-lg-flex justify-content-between flex-wrap">
+                        <ul class="m-0 text-center">
                             <h3 class="title text-center font_18">Desktop</h3>
                             <li>
                                 <a href="#/"><img src="img/icon_windows.svg" alt="Icon" /></a>
@@ -225,7 +313,7 @@
                                 <a href="#/"><img src="img/icon_penguin.svg" alt="Icon" /></a>
                             </li>
                         </ul>
-                        <ul class="p-0 m-0 text-center">
+                        <ul class="m-0 text-center">
                             <h3 class="title text-center font_18">Mobile</h3>
                             <li>
                                 <a href="#/"><img src="img/icon_ios.svg" alt="Icon" /></a>
@@ -234,8 +322,36 @@
                                 <a href="#/"><img src="img/icon_android.svg" alt="Icon" /></a>
                             </li>
                         </ul>
-                        <ul class="p-0 m-0 text-center">
+                        <ul class="m-0 text-center">
                             <h3 class="title text-center font_18">Devices / Browser</h3>
+                            <li>
+                                <a href="#/"><img src="img/icon_chrome.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_vpn.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_playstation.svg" alt="Icon" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="plan_how__list d-flex d-md-flex d-lg-none justify-content-between flex-wrap">
+                        <ul class="p-0 m-0 text-center">
+                            <li>
+                                <a href="#/"><img src="img/icon_windows.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_macos.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_penguin.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_ios.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <a href="#/"><img src="img/icon_android.svg" alt="Icon" /></a>
+                            </li>
                             <li>
                                 <a href="#/"><img src="img/icon_chrome.svg" alt="Icon" /></a>
                             </li>
@@ -255,7 +371,12 @@
 <!--end dashboard-->
 <!--begin modals-->
 <div class="modal bd-example-modal-lg modal_tutorial" id="tutorial" tabindex="-1" role="dialog">
+    <div class="modal_tutorial__info d-block d-md-block d-lg-none">
+        <a class="modal_tutorial__skip" href="#/" data-dismiss="modal" aria-label="Close">Skip</a>
+        <p class="modal_tutorial__text">A video tutoreal  for better understanding of how to use LimeVPN</p>
+    </div>
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
         <div class="modal-content">
             <div class="modal-header d-flex align-items-center justify-content-between">
                 <h5 class="modal-title">Learn how to use Lime Vpn</h5>
@@ -264,7 +385,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <iframe width="100%" height="445" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="295" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>A video tutorial to help you understand how to use Lime VPN</p>
             </div>
 

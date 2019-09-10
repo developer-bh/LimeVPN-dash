@@ -21,11 +21,11 @@
 <!--begin header-->
 <div class="header__notification">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-6 col-md-8">
-                <p class="font-weight-600 font_20">Your trial will expire soon. Upgrade your plan for a better internet experience...</p>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-8 col-lg-8">
+                <p class="font-weight-600">Your trial will expire soon. Upgrade your plan for a better internet experience...</p>
             </div>
-            <div class="col-6 col-md-4 d-flex align-items-center justify-content-end">
+            <div class="col-12 col-md-4 col-lg-4 d-flex align-items-center justify-content-end">
                 <a class="btn_white" href="plans.html">Upgrade Now</a>
                 <a class="notification_close" href="#/"><img src="img/icon_close.svg" alt="Icon" /></a>
             </div>
@@ -34,13 +34,13 @@
 </div>
 <header class="header">
     <div class="container-fluid">
-        <div class="row justify-content-between">
-            <div class="col-6 col-md-6">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-6 col-md-6 header__logo">
                 <a href="/">
                     <img src="img/logo_white.svg" alt="Logo" />
                 </a>
             </div>
-            <div class="col-6 col-md-6 d-flex align-items-center justify-content-end">
+            <div class="col-6 col-md-6 header__info d-flex align-items-center justify-content-end">
                 <a class="btn_white btn_upgrade" href="#/">
                     <img src="img/icon_upgrade.svg" alt="Icon" />
                     Upgrade Now
@@ -98,6 +98,64 @@
                         </a>
                     </div>
                 </div>
+                <div class="header__menu d-block d-md-block d-lg-none">
+                    <a href="#" role="button" id="mob_nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/icon_hamburger.svg" alt="Icon" />
+                        <img src="img/icon_hamburger_open.svg" alt="Icon" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="mob_nav">
+                        <a class="dropdown-item" href="dashboard.html">
+                            <img src="img/icon_dashboard.svg" alt="Icon" />
+                            <img src="img/icon_dashboard_blue.svg" alt="Icon" />
+                            Dashboard
+                        </a>
+                        <a class="dropdown-item" href="how_to_use.html">
+                            <img src="img/icon_htu.svg" alt="Icon" />
+                            <img src="img/icon_htu_blue.svg" alt="Icon" />
+                            How to use
+                        </a>
+                        <a class="dropdown-item" href="support.html">
+                            <img src="img/icon_support.svg" alt="Icon" />
+                            <img src="img/icon_support_blue.svg" alt="Icon" />
+                            Support
+                        </a>
+                        <a class="dropdown-item" href="billing.html">
+                            <img src="img/icon_billing.svg" alt="Icon" />
+                            <img src="img/icon_billing_blue.svg" alt="Icon" />
+                            Billing
+                        </a>
+                        <a class="dropdown-item" href="rewards.html">
+                            <img src="img/icon_rewards.svg" alt="Icon" />
+                            <img src="img/icon_rewards_blue.svg" alt="Icon" />
+                            Rewards
+                        </a>
+                        <a class="dropdown-item" href="profile.html">
+                            <img src="img/icon_profile.svg" alt="Icon" />
+                            <img src="img/icon_profile_blue.svg" alt="Icon" />
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="submit_feedback.html">
+                            <img src="img/icon_feedback.svg" alt="Icon" />
+                            <img src="img/icon_feedback_blue.svg" alt="Icon" />
+                            Submit feedback
+                        </a>
+                        <a class="dropdown-item" href="network_status.html">
+                            <img src="img/icon_network.svg" alt="Icon" />
+                            <img src="img/icon_network_blue.svg" alt="Icon" />
+                            Network status
+                        </a>
+                        <a class="dropdown-item" href="tutorials.html">
+                            <img src="img/icon_tutorials.svg" alt="Icon" />
+                            <img src="img/icon_tutorials_blue.svg" alt="Icon" />
+                            Tutorials
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/icon_signout.svg" alt="Icon" />
+                            <img src="img/icon_signout_blue.svg" alt="Icon" />
+                            Signout
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -113,7 +171,7 @@
                     <a href="dashboard.html">Dashboard</a>
                 </li>
                 <li>
-                    <a href="billing.html">Billng</a>
+                    <a href="billing.html">Billing</a>
                 </li>
                 <li>
                     <a href="how_to_use.html">How to use</a>
@@ -133,24 +191,25 @@
 <section class="support">
     <div class="container">
         <div class="row">
-            <div class="col-9 col-md-9 support__help support_help">
+            <div class="col-12 col-md-9 support__help support_help">
                 <div class="box">
                     <div class="row">
-                        <div class="col-12 col-md-6 support_help__img">
+                        <div class="col-12 col-md-5 support_help__img">
                             <img src="img/img_support.svg" alt="Image" />
                         </div>
-                        <div class="col-12 col-md-6 support_help__info">
+                        <div class="col-12 col-md-7 support_help__info">
                             <h3 class="title">How can we help?</h3>
                             <input type="search" placeholder="Search our articles">
                             <div class="support_help__btns d-flex justify-content-between">
                                 <a class="btn_blue" href="#/">Search</a>
-                                <a class="btn_blue" href="#/">Live Chat</a>
+                                <a class="btn_blue d-flex d-md-flex d-lg-none" href="tutorials.html">Tutorials</a>
+                                <a class="btn_blue d-none d-md-flex d-lg-flex" href="tutorials.html">Live chat</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3 col-md-3 support__ticket support_ticket">
+            <div class="col-12 col-md-3 support__ticket support_ticket">
                 <div class="box">
                     <a href="#/" data-toggle="modal" data-target="#support">Open <br> Ticket</a>
                 </div>

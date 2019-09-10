@@ -3,55 +3,76 @@
 .signup
   min-height: 100vh
   padding: 0 15px
+  .row
   &__item
     &:first-child
-      padding-right: 35px
+      padding-right: 25px
       background-image: linear-gradient(225deg, #00ddec 0%, #008dea 100%)
       img
-        padding-right: 115px
+        width: 100%
+        max-width: 490px
+        margin-right: 78px
     &:nth-child(2)
       padding-left: 100px
       .logo
-        margin-bottom: 90px
+        margin-bottom: 60px
       .btn_google
-        margin-bottom: 42px
+        margin-bottom: 28px
+        height: 41px
+  .logo
+    height: 32px
+  &__logo
+    width: 100%
+    background-color: white
+    padding: 25px 15px
+    img
+      height: 40px
+      padding: 0!important
   &__title
     color: white
     font-family: "Mr Eaves XL Mod OT", sans-serif
-    font-size: 60px
+    font-size: 40px
     font-weight: 300
-    line-height: 72px
+    line-height: 48px
+    margin-bottom: 35px
   &__text
-    margin-bottom: 40px
+    margin-bottom: 27px
   &__form
-    width: 520px
-    max-width: 100%
+    width: 100%
+    max-width: 520px
     label
+      position: relative
       width: 100%
-      font-size: 22px
+      font-size: 15px
       font-weight: 700
-      line-height: 26.4px
+      line-height: 17.6px
       text-transform: uppercase
-      margin-bottom: 45px
+      margin-bottom: 35px
       input
         width: 100%
         height: 44px
         margin-top: 7px
         border: 0
         border-bottom: 1px solid $color_grey
-        padding-left: 22px
+        padding-left: 15px
         color: $color_grey
-        font-size: 30px
+        font-size: 20px
         font-weight: 400
-        line-height: 36px
+        line-height: 24px
         padding-bottom: 5px
         outline: 0
         &::placeholder
           color: $color_grey
-          font-size: 30px
+          font-size: 20px
           font-weight: 400
-          line-height: 36px
+          line-height: 24px
+      .field-icon
+        position: absolute
+        right: 15px
+        bottom: 15px
+        color: #b3b3b3
+        z-index: 2
     input[type="submit"]
-      margin: 20px 0 40px 0
-      width: 163px
-      height: 60px
+      margin: 0 0 25px 0
+      width: 110px
+      height: 40px

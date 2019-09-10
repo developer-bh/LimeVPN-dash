@@ -1,11 +1,1056 @@
 $r-768: 768px
-$r-936: 936px
-$r-980: 980px
+$r-992: 992px
 $r-1200: 1200px
-$r-1174: 1174px
 
 body
+  // break 768
+  @media (max-width: $r-768 - 1)
+
+    // Global
+
+    .s_title
+      font-size: 22px
+
+    // Steps
+
+    .steps
+      padding: 0
+      align-items: flex-start
+      .container
+        padding: 0
+        .row
+          margin: 0
+          .col-12
+            padding: 0
+      &__item
+        width: 100%
+        max-width: 100%
+        border-radius: 0
+        min-height: 100vh
+      .tab-content
+        padding: 37px 0 0 0
+      .nav-tabs
+        justify-content: space-between
+        .nav-item
+          width: 32.5%
+          .nav-link
+            height: 6px
+            background-color: #f2f2f2
+            border-radius: 0!important
+      &__number
+        font-size: 12px
+        padding: 0 44px
+      &__title
+        font-size: 27px
+        line-height: 32px
+        padding: 0 44px
+        margin-bottom: 15px
+      &__undertitle
+        font-size: 14px
+        margin-bottom: 55px
+        padding: 0 44px
+      &__choose
+        margin-bottom: 180px!important
+        li
+          padding: 20px 50px!important
+          margin-bottom: 0!important
+          -webkit-overflow-scrolling: touch
+          span
+            min-width: 70px
+          a
+            font-size: 14px!important
+            img
+              margin-right: 31px!important
+          &.active
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+      .input-group
+        margin-bottom: 0!important
+        .btn_blue, .btnPrevious
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 49.6%
+          height: 52px
+          background-color: #ccc
+          border-radius: 0
+          border: 0
+          color: white!important
+          font-size: 14px
+          img
+            display: none
+      &__form
+        padding: 0 44px
+        margin-bottom: 40px
+        input
+          width: 100%
+          height: 24px
+          font-size: 12px
+          border-radius: 1px
+          &::placeholder
+            font-size: 12px
+      &__device
+        padding: 0 44px
+        justify-content: space-between
+        li
+          width: 46%
+          margin-bottom: 35px
+          a
+            border-radius: 1px
+            width: 100%
+            height: 65px
+            img
+              max-height: 36px
+      &__title_inst
+        padding: 0 44px
+      &__instructions
+        padding: 0 44px
+        width: 100%
+        justify-content: space-between
+        li
+          margin: 0 0 10px 0
+          a
+            border-radius: 1px
+            min-width: 88px
+            height: 29px
+            font-size: 12px
+
+    // Dashboard
+
+    .modal_tutorial
+      &#tutorial
+        .modal-dialog
+          .modal-content
+            .modal-body
+              iframe
+                max-height: 225px
+    .plan_graph
+      min-height: auto
+
+    // Profile
+
+    .profile
+      padding-bottom: 0
+      .container
+        padding: 0
+        .row
+          margin: 0
+          .col-12
+            padding: 0
+        .box
+          width: 100%
+          padding: 0
+          border: 0
+          .title
+            display: none
+          nav
+            .nav
+              margin-bottom: 30px
+              border-radius: 0
+              a
+                font-size: 12px
+          .tab-content
+            padding: 0
+            form
+              padding: 0 20px
+              label
+                font-size: 14px
+                margin-bottom: 30px
+                input, select
+                  height: 30px
+                  margin-top: 5px
+                  font-size: 12px
+                  &::placeholder
+                    font-size: 12px
+                select
+                  background-size: 14px
+                .field-icon
+                  bottom: 6px
+            .tab-pane
+              p
+                padding: 0 20px
+                font-size: 10px
+                line-height: 13.33px
+                margin-bottom: 280px
+              input[type="submit"]
+                width: 100%
+                height: 52px
+                background-color: #ccc
+                font-size: 13px
+                border-radius: 0
+                border: 0
+                color: white
+    .modal_save
+      .modal-body
+        padding: 15px
+        .title
+          font-size: 18px
+          line-height: 30px
+        p
+          font-size: 14px
+          line-height: 20px
+    // How to use
+
+    .how_to_use
+      &__list
+        margin-top: 30px
+        li
+          padding: 10px 13px
+          .accordion_action
+            img
+              height: 15px
+            &:before
+              width: 6px
+              height: 11px
+          .htu_list_item
+            padding-top: 20px
+            .title
+              font-size: 14px
+          .htu_choose
+            margin-bottom: 25px
+            &__item
+              margin-bottom: 14px
+              .title
+                font-size: 12px
+                margin: 0 25px 5px 0
+              ul
+                li
+                  margin: 0 9px 0 0
+                  a
+                    width: 74px
+                    height: 35px
+                    font-size: 14px
+          .htu_tutorials
+            ul
+              li
+                a
+                  width: 151px
+                  height: 40px
+                  font-size: 10px
+                  line-height: 13px
+                  padding: 0 15px
+                  text-align: center
+
+    // Feedback
+
+    .feedback
+      padding-bottom: 0
+      .box
+        padding: 23px
+        &:last-of-type
+          margin-bottom: 120px
+      .btn_blue
+        width: 100%
+        border: 0
+        border-radius: 0
+        height: 52px
+        background-color: #ccc
+        color: white
+        font-size: 13px
+
+    .feedback_item
+      margin-bottom: 31px
+      .title
+        font-size: 12px
+        padding-left: 18px
+        margin-bottom: 12px
+        &:before
+          width: 7px
+          height: 7px
+      ul
+        padding-left: 18px
+        li
+          margin-right: 34px
+          a
+            img
+              height: 23px
+
+    // Tutorials
+
+    .tutorials
+      &__logos
+        margin-bottom: 42px
+        li
+          margin-bottom: 24px
+          a
+            height: 68px
+      .title
+        font-size: 14px
+        text-align: center
+        color: #383838
+        margin-bottom: 22px
+      &__instructions
+        justify-content: space-between
+        margin-bottom: 35px
+        li
+          margin-right: 0
+          a
+            width: 158px
+            height: 43px
+            font-size: 16px
+      .title_how
+        color: $color_blue
+        text-align: left
+        font-size: 14px
+      .colums
+        columns: 1
+        li
+          font-size: 14px
+          margin-bottom: 15px
+      &__more
+        a
+          font-size: 14px
+
+    // Support
+
+    .support_help
+      padding: 0
+      &__img
+        text-align: center
+        margin-bottom: 37px
+        img
+          height: 170px
+          max-width: 170px
+      .box
+        padding: 30px 0
+        border-radius: 4px
+      &__info
+        .title
+          text-align: center
+          font-size: 17px
+          margin-bottom: 16px
+        input[type='search']
+          height: 37px
+          font-size: 13px
+          margin-bottom: 18px
+          &::placeholder
+            font-size: 13px
+      &__btns
+        a
+          width: 148px
+          height: 36px
+          border-radius: 3px
+
+    .support_ticket
+      min-height: auto
+      padding: 0
+      .box
+        border-radius: 0
+        border: 0
+        a
+          width: 100%
+          height: 58px
+          border-radius: 4px
+          background-color: #47cf86
+          font-size: 13px
+          color: white
+          br
+            display: none
+
+    .support_table
+      padding: 0
+      .box
+        border-radius: 4px
+
+    .modal_support
+      .modal-dialog
+        padding: 0 15px
+      .modal-body
+        border-radius: 4px
+        padding: 34px 25px
+        .title
+          font-size: 14px
+          margin-bottom: 16px
+        form
+          label
+            font-size: 12px
+            margin-bottom: 16px
+            input
+              height: 32px
+              border-radius: 2px
+            textarea
+              min-height: 87px
+              border-radius: 2px
+          input[type='submit']
+            margin-top: 50px
+            width: 100%
+            height: 37px
+            border-radius: 2px
+
+    // Rewards
+
+    .rewards
+      &__img
+       .box
+        padding: 15px
+        text-align: center
+        border-radius: 5px
+        img
+          max-height: 150px
+      &__info
+        padding: 15px 15px 0 15px!important
+        .title
+          text-align: center
+          font-size: 17px
+          margin-bottom: 10px
+        p
+          font-size: 12px
+          text-align: center
+          line-height: 14px
+          margin-bottom: 20px
+        form
+          input[type='email']
+            height: 41px
+            font-size: 12px
+            &::placeholder
+              font-size: 12px
+          input[type='submit']
+            height: 41px
+            font-size: 12px
+            &::placeholder
+              font-size: 12px
+      &__invite
+        .box
+          border: 0
+          padding: 15px
+          .title
+            font-size: 17px
+            margin-bottom: 25px
+          p
+            font-size: 12px
+          ul
+            li
+              margin-bottom: 13px
+              .box
+                max-width: 251px
+                margin: 0 auto
+                border: 1px solid #d2eef9
+                border-radius: 3px
+                a
+                  height: 41px
+                  font-size: 12px
+                  img
+                    height: 22px
+      &__stats
+        .box
+          overflow-x: scroll
+          border-radius: 5px
+        .table
+          thead
+            tr
+              display: flex
+              justify-content: space-between
+              width: 100%
+              th
+                width: 140px
+          tbody
+            tr
+              display: flex
+              justify-content: space-between
+              width: 100%
+              td
+                width: 140px
+
+    // Billing
+
+    .modal_cancel
+      .modal-dialog
+        .modal-content
+          border-radius: 3px
+        .modal-body
+          .btn_orange
+            width: 127px
+            height: 31px
+            border-radius: 7px
+            font-size: 10px
+
+    // Plans
+
+    .plans
+      &__notification
+        padding: 0
+        background-color: rgba(255, 238, 222, 0.61)
+        margin-bottom: 0
+        .box
+          border: 0
+          border-radius: 0
+          p
+            font-size: 8px
+            padding: 5px
+      &__wrapper
+        padding: 0
+    .plans_wrapper
+      margin-bottom: 40px
+      &__space
+        border: 0
+        padding: 0
+        .plans_additional
+          padding: 0 22px 0 40px
+          font-size: 10px
+        .row
+          margin: 0
+        .col-12
+          padding: 0
+          .plans__toggle
+            margin-bottom: 22px
+            display: flex
+            justify-content: space-between
+            .toggle
+              display: none
+            label
+              display: flex
+              align-items: center
+              justify-content: center
+              width: 50%
+              height: 39px
+              border: 1px solid #2693ff
+              color: #999
+              font-size: 10px
+              font-weight: 700
+              margin: 0
+              &.toggler--is-active
+                background-color: $color_blue
+                color: white
+        #monthly, #yearly
+          padding: 0 18px
+          .plans_item
+            margin-bottom: 18px
+            &.choosed
+              background-image: url("../img/icon_choosed.svg")
+              background-position: 92% 18%
+              background-repeat: no-repeat
+              background-size: 35px
+              .box
+                border: 3px solid #39b54a
+            .box
+              border-radius: 4px
+              border: 2px solid #d2eef9
+              padding: 17px 22px 11px 22px
+            &__title
+              text-align: left
+              padding: 0
+              margin-bottom: 8px
+              border-bottom: 0
+              .title
+                color: #3d3d3d
+                font-size: 19px
+                font-weight: 700
+                line-height: 22.4px
+                text-transform: uppercase
+              span
+                align-items: center
+                justify-content: center
+                width: 97px
+                height: 20px
+                background-color: #29abe2
+                color: white
+                font-size: 9px
+                font-weight: 500
+                line-height: 10.4px
+                text-transform: uppercase
+            &__price
+              background-color: transparent
+              padding: 0
+              text-align: left
+              span, .title
+                color: #999
+                font-size: 19px
+                font-weight: 700
+                line-height: 17.6px
+                margin-bottom: 0
+              h4.title
+                font-weight: 500
+                line-height: 22.4px
+                margin-bottom: 10px
+            &__list, &__btn
+              display: none
+
+    .plans_info
+      padding: 0 18px
+      &__title
+        color: #777
+        font-size: 15px
+        font-weight: 500
+        line-height: 16.67px
+        border-bottom: 1px solid #d2eef9
+        padding-bottom: 4px
+        margin-bottom: 20px
+      &__details
+        margin-bottom: 35px
+        ul
+          width: 100%
+          li
+            display: flex
+            justify-content: space-between
+            p
+              color: #787878
+              font-size: 13px
+              font-weight: 500
+              line-height: 16.67px
+              b
+                color: #383838
+              &.color_green
+                color: #009245
+        .price, .total
+          color: black
+          font-size: 13px
+          font-weight: 700
+          line-height: 16.67px
+      &__method
+        .box
+          padding: 12px 18px
+      &__select
+        .box
+          display: flex
+          justify-content: space-between
+          align-items: center
+          margin-bottom: 15px
+          padding: 13px 18px
+          &.active
+            border-color: $color_blue
+          &:hover
+            text-decoration: none
+            border-color: $color_blue
+          .title
+            color: #777
+            font-size: 15px
+            font-weight: 500
+            line-height: 16.67px
+            margin-bottom: 0
+          img
+            height: 11px
+      &__order
+        display: flex
+        justify-content: center
+        padding-top: 20px
+        a
+          display: flex
+          align-items: center
+          justify-content: center
+          color: white
+          font-size: 15px
+          font-weight: 500
+          line-height: 16.67px
+          width: 100px
+          height: 37px
+          border-radius: 2px
+          background-color: #45b64a
+          &:hover
+            text-decoration: none
+
+    .plans_method
+      margin-bottom: 15px
+      &__card
+        .title
+          color: #777
+          font-size: 15px
+          font-weight: 500
+          line-height: 16.67px
+          margin-bottom: 0
+        img
+          height: 17px
+      &__check
+        display: none
+        .form-check
+          margin: 22px 0
+          label
+            color: #777
+            font-size: 13px
+            font-weight: 400
+            line-height: 16.67px
+            .cr
+              border-radius: 50%
+              margin-top: 0
+          span
+            color: #777
+            font-size: 10px
+            font-weight: 400
+            line-height: 16.67px
+            text-transform: uppercase
+      &__btn
+        a
+          display: flex
+          align-items: center
+          justify-content: center
+          color: white
+          font-size: 13px
+          font-weight: 500
+          line-height: 16.67px
+          width: 140px
+          height: 30px
+          border-radius: 2px
+          background-color: #b3b3b3
+          margin-bottom: 13px
+          &:hover
+            text-decoration: none
+            color: white
+
+    .modal_update_card
+      .modal-dialog
+        margin: 0
+        .modal-content
+          border: 0
+          border-radius: 0
+      .modal-body
+        padding: 33px 15px
+        .title
+          color: #383838
+          font-size: 20px
+          font-weight: 500
+          line-height: 26px
+          text-align: center
+          margin-bottom: 15px
+        p
+          color: #999
+          font-size: 13px
+          font-weight: 500
+          line-height: 23.33px
+          margin-bottom: 40px
+          text-align: center
+        form
+          display: flex
+          justify-content: space-between
+          flex-wrap: wrap
+          label
+            width: 100%
+            color: #808080
+            font-size: 13px
+            font-weight: 500
+            line-height: 26.67px
+            margin-bottom: 23px
+            input
+              width: 100%
+              height: 43px
+              border-radius: 3px
+              border: 1px solid #d2eef9
+              padding-left: 15px
+            &.label_half
+              width: 48%
+          input[type='submit']
+            width: 100px
+            height: 37px
+            border-radius: 2px
+            background-color: #b3b3b3
+            border: 0
+            color: white
+            font-size: 15px
+            font-weight: 500
+            margin: 14px auto 0 auto
+    // Help
+
+    .help
+      padding-top: 40px
+      .s_title
+        margin-bottom: 40px
+      .box
+        padding: 13px 20px
+        .title
+          margin-bottom: 16px
+        .title, .title a
+          font-size: 13px
+          line-height: 16px
+        ul
+          li
+            margin-bottom: 18px
+            a
+              font-size: 13px
+              line-height: 16px
+
+
+  // break 992
+  @media (max-width: $r-992 - 1)
+
+    // Header
+
+    .header
+      padding: 9px 0
+      &__notification
+        padding: 7px 0
+        display: none
+        p
+          text-align: left
+          font-size: 12px
+          margin-bottom: 5px
+      .btn_upgrade
+        display: none
+      &__logo
+        img
+          height: 21px
+      .btn_notification
+        margin-right: 20px
+        img
+          height: 20px
+        span
+          width: 11px
+          height: 11px
+          font-size: 10px
+      .dropdown_profile
+        display: none
+      &_nav
+        display: none
+      &__info
+        .dropdown_notification
+          .dropdown-menu
+            ul
+              li
+                padding: 7px 15px
+                p
+                  font-size: 12px
+
+    // Sign Up
+
+    .signup
+      &__item
+        &:first-child
+          padding: 0
+          img
+            padding: 0 15px
+            width: 100%
+            max-width: 320px
+            margin: 0 auto 40px auto
+        &:nth-child(2)
+          padding: 50px 15px 30px 15px
+      &__title
+        padding-top: 60px
+        width: 100%
+        font-size: 30px
+        line-height: 36px
+      &__logo
+        img
+          margin-bottom: 0!important
+      &__text
+        width: 100%
+        font-size: 25px
+        color: #383838
+      &__form
+        margin: 0 auto
+        label
+          border: 1px solid #d2eef9
+          padding: 7px 15px
+          font-size: 20px
+          font-weight: 500
+          display: flex
+          align-items: center
+          margin-bottom: 100px
+          input
+            font-size: 20px
+            font-weight: 400
+            margin: 0
+            border-bottom: 0
+            padding-left: 15px
+            &::placeholder
+              color: #b3b3b3
+              font-size: 20px
+              font-weight: 400
+        .mob_btn, input[type="submit"]
+          margin-bottom: 22px
+          width: 100%
+          height: 53px
+          border-radius: 1px
+          font-size: 20px
+          font-weight: 400
+        .btn_grey
+          align-items: center
+          justify-content: center
+          a
+            color: $color_blue
+            margin-left: 5px
+        .btn_blue
+          background-color: $color_blue
+          color: white
+
+    // Sign In
+
+    .signin
+      &__form
+        label
+          &:first-child
+            margin-bottom: 25px
+
+    // Dashboard
+
+    .dashboard
+      padding-top: 20px
+      .box
+        border-radius: 2px
+        margin-bottom: 30px
+
+    .plan_details
+      &__name
+        font-size: 10px
+        width: 106px
+        height: 38px
+        img
+          height: 13px
+          margin-right: 10px
+
+    .plan_how
+      &__list
+        padding: 18px 18px 8px 18px
+        overflow-x: scroll
+        ul
+          width: 100%
+          display: flex
+          justify-content: space-between
+          flex-wrap: wrap
+          .title
+            display: none
+          li
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 48%
+            height: 91px
+            border-radius: 1px
+            border: 1px solid #d2eef9
+            margin-bottom: 10px
+            img
+              height: 30px
+
+    .modal_tutorial
+      &#tutorial
+        background-image: linear-gradient(225deg, #00ddec 0%, #008dea 100%)
+      .modal-dialog
+        padding-bottom: 50px
+        .modal-content
+          .modal-header
+            padding: 15px 7px 7px 7px
+            .modal-title
+              font-size: 12px
+            .close
+              span
+                font-size: 10px
+          .modal-body
+            padding: 0 7px 7px 7px
+            p
+              font-size: 10px
+      &__info
+        padding: 20px 15px
+      &__skip
+        display: block
+        width: 100%
+        text-align: right
+        color: white
+        font-size: 17px
+        font-weight: 400
+        line-height: 20px
+        text-transform: uppercase
+        margin-bottom: 95px
+      &__text
+        color: white
+        font-size: 17px
+        font-weight: 400
+        line-height: 20px
+        text-align: center
+        max-width: 425px
+        margin: 0 auto 85px auto
+
+
+    // Profile
+
+    .profile
+      .container
+        .box
+          .tab-content
+            form
+              label
+                input, select
+                  border: 1px solid #d2eef9
+    // How to use
+
+    .how_to_use
+      padding-top: 40px
+    .htu_choose
+      &__item
+        .title
+          margin-bottom: 5px
+        ul
+          li
+            margin: 0 14px 0 0
+
+    // Feedback
+
+    .feedback
+      padding-top: 40px
+      .s_title
+        margin-bottom: 15px
+
+    // Tutorials
+
+    .tutorials
+      padding-top: 40px
+      .s_title
+        margin-bottom: 15px
+      &__logos
+        li
+          a
+            img
+              height: 22px
+
+    // Support
+
+    .support
+      padding-top: 40px
+
+    // Rewards
+
+    .rewards
+      padding-top: 40px
+
+    // Billing
+
+    .billing
+      padding-top: 40px
+
+  // break 768 - 992
+  @media (min-width: $r-768) and (max-width: $r-992 - 1)
+
+    // Sign Up
+
+    .signup
+      &__item
+        &:first-child
+          padding: 0
+          img
+            max-width: 500px
+      &__form
+        label
+          input
+            padding-left: 85px
+
+    // Dashboard
+
+    .plan_how
+      &__list
+        max-height: 215px
+        overflow-x: scroll
+
+    // Profile
+
+    .profile
+      padding-top: 40px
+      .container
+        .box
+          .tab-content
+            form
+              label
+                .field-icon
+                  bottom: 12px
+
+    // Support
+
+    .support_help
+      &__btns
+        a
+          max-width: 110px
+
+
   // break 1200
-  @media (min-width: 1200px)
-    .container
-      max-width: 1400px
+  @media (min-width: $r-992) and (max-width: $r-1200)
+
+    // Sign Up
+
+    .signup
+      &__item
+        &:first-child
+          img
+            margin-right: 0

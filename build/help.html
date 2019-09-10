@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <title>LimeVPN</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Fonts-->
+    <link rel="stylesheet" type="text/css" href="../build/fonts/fonts.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../build/bower_comp/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../build/bower_comp/components-font-awesome/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.2/css/intlTelInput.css">
+    <!-- endbower -->
+</head>
+<body>
+
+<!--begin header-->
+<div class="header__notification">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-8 col-lg-8">
+                <p class="font-weight-600">Your trial will expire soon. Upgrade your plan for a better internet experience...</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 d-flex align-items-center justify-content-end">
+                <a class="btn_white" href="plans.html">Upgrade Now</a>
+                <a class="notification_close" href="#/"><img src="img/icon_close.svg" alt="Icon" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="header">
+    <div class="container-fluid">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-6 col-md-6 header__logo">
+                <a href="/">
+                    <img src="img/logo_white.svg" alt="Logo" />
+                </a>
+            </div>
+            <div class="col-6 col-md-6 header__info d-flex align-items-center justify-content-end">
+                <a class="btn_white btn_upgrade" href="#/">
+                    <img src="img/icon_upgrade.svg" alt="Icon" />
+                    Upgrade Now
+                </a>
+                <div class="dropdown dropdown_notification show">
+                    <a class="btn_notification dropdown-toggle" href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/icon_notification.svg" alt="Icon" />
+                        <span>2</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="notification">
+                       <h3 class="title">Notifications</h3>
+                        <ul class="p-0 m-0">
+                            <li>
+                                <img class="icon_notification" src="img/icon_botification_black.svg" alt="Icon" />
+                                <p><b>Lorem ipsum dolor sit amet, consectetuer</b> adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim</p>
+                                <a class="icon_close" href="#/"><img src="img/icon_close_notification.svg" alt="Icon" /></a>
+                            </li>
+                            <li>
+                                <img class="icon_notification" src="img/icon_botification_black.svg" alt="Icon" />
+                                <p><b>Lorem ipsum dolor sit amet, consectetuer</b> adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim</p>
+                                <a class="icon_close" href="#/"><img src="img/icon_close_notification.svg" alt="Icon" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown dropdown_profile show">
+                    <a class="btn_profile btn btn-secondary dropdown-toggle" href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hello, alpha@yhgh.com
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profile">
+                        <a class="dropdown-item" href="profile.html">
+                            <img src="img/icon_profile.svg" alt="Icon" />
+                            <img src="img/icon_profile_blue.svg" alt="Icon" />
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="submit_feedback.html">
+                            <img src="img/icon_feedback.svg" alt="Icon" />
+                            <img src="img/icon_feedback_blue.svg" alt="Icon" />
+                            Submit feedback
+                        </a>
+                        <a class="dropdown-item" href="network_status.html">
+                            <img src="img/icon_network.svg" alt="Icon" />
+                            <img src="img/icon_network_blue.svg" alt="Icon" />
+                            Network status
+                        </a>
+                        <a class="dropdown-item" href="tutorials.html">
+                            <img src="img/icon_tutorials.svg" alt="Icon" />
+                            <img src="img/icon_tutorials_blue.svg" alt="Icon" />
+                            Tutorials
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/icon_signout.svg" alt="Icon" />
+                            <img src="img/icon_signout_blue.svg" alt="Icon" />
+                            Signout
+                        </a>
+                    </div>
+                </div>
+                <div class="header__menu d-block d-md-block d-lg-none">
+                    <a href="#" role="button" id="mob_nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/icon_hamburger.svg" alt="Icon" />
+                        <img src="img/icon_hamburger_open.svg" alt="Icon" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="mob_nav">
+                        <a class="dropdown-item" href="dashboard.html">
+                            <img src="img/icon_dashboard.svg" alt="Icon" />
+                            <img src="img/icon_dashboard_blue.svg" alt="Icon" />
+                            Dashboard
+                        </a>
+                        <a class="dropdown-item" href="how_to_use.html">
+                            <img src="img/icon_htu.svg" alt="Icon" />
+                            <img src="img/icon_htu_blue.svg" alt="Icon" />
+                            How to use
+                        </a>
+                        <a class="dropdown-item" href="support.html">
+                            <img src="img/icon_support.svg" alt="Icon" />
+                            <img src="img/icon_support_blue.svg" alt="Icon" />
+                            Support
+                        </a>
+                        <a class="dropdown-item" href="billing.html">
+                            <img src="img/icon_billing.svg" alt="Icon" />
+                            <img src="img/icon_billing_blue.svg" alt="Icon" />
+                            Billing
+                        </a>
+                        <a class="dropdown-item" href="rewards.html">
+                            <img src="img/icon_rewards.svg" alt="Icon" />
+                            <img src="img/icon_rewards_blue.svg" alt="Icon" />
+                            Rewards
+                        </a>
+                        <a class="dropdown-item" href="profile.html">
+                            <img src="img/icon_profile.svg" alt="Icon" />
+                            <img src="img/icon_profile_blue.svg" alt="Icon" />
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="submit_feedback.html">
+                            <img src="img/icon_feedback.svg" alt="Icon" />
+                            <img src="img/icon_feedback_blue.svg" alt="Icon" />
+                            Submit feedback
+                        </a>
+                        <a class="dropdown-item" href="network_status.html">
+                            <img src="img/icon_network.svg" alt="Icon" />
+                            <img src="img/icon_network_blue.svg" alt="Icon" />
+                            Network status
+                        </a>
+                        <a class="dropdown-item" href="tutorials.html">
+                            <img src="img/icon_tutorials.svg" alt="Icon" />
+                            <img src="img/icon_tutorials_blue.svg" alt="Icon" />
+                            Tutorials
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/icon_signout.svg" alt="Icon" />
+                            <img src="img/icon_signout_blue.svg" alt="Icon" />
+                            Signout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--end header-->
+
+<!--begin header nav-->
+<section class="header_nav">
+    <div class="container">
+        <div class="row">
+            <ul class="d-flex justify-content-center m-0 p-0 w-100">
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="billing.html">Billing</a>
+                </li>
+                <li>
+                    <a href="how_to_use.html">How to use</a>
+                </li>
+                <li>
+                    <a href="rewards.html">Rewards</a>
+                </li>
+                <li>
+                    <a href="support.html">Support</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--end header nav-->
+<!--begin help-->
+<section class="help">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-9 col-lg-9 m-auto">
+                <h2 class="s_title text-center">Help</h2>
+                <div class="box">
+                    <h3 class="title">Quick reference</h3>
+                    <ul>
+                        <li><a href="#/">How many devices can be connected to the VPN at the same time?</a></li>
+                        <li><a href="#/">How do i choose a VPN server location</a></li>
+                        <li><a href="#/">Some websites are still blocked</a></li>
+                        <li><a href="#/">What is LimeVPN privacy policy?</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 class="title mb-0"><a href="#/">Go to FAQ</a></h3>
+                </div>
+                <div class="box">
+                    <ul>
+                        <li><a href="#/">Talk to a human</a></li>
+                        <li><a href="#/">Chat with our support Team</a></li>
+                        <li><a href="#/">Send an email</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 class="title">Support Centre</h3>
+                    <ul>
+                        <li><a href="#/">Find tutorials and troubleshooting guides.</a></li>
+                        <li><a href="#/">Go to Support center</a></li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+    </div>
+</section>
+<!--end help-->
+
+<!-- bower:js -->
+<script src="../build/bower_comp/jquery/dist/jquery.js"></script>
+<script src="../build/bower_comp/popper.js/dist/umd/popper.js"></script>
+<script src="../build/bower_comp/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../build/bower_comp/chart.js/dist/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.2/js/intlTelInput.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/routekick/bootstrap-modal-wizard@1.0.0/dist/jquery.modal-wizard.min.js"></script>
+<!-- endbower -->
+<!-- Scripts -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
