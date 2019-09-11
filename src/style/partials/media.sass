@@ -11,6 +11,26 @@ body
     .s_title
       font-size: 22px
 
+    // Header
+
+    .header
+      &__info
+        position: initial
+        .dropdown
+          position: initial
+      .dropdown_notification
+        .dropdown-menu
+          .title
+            display: none
+          &.show
+            width: 100%
+            max-width: 100%
+            left: 0!important
+            top: 55px!important
+            transform: initial!important
+            padding: 0
+
+
     // Steps
 
     .steps
@@ -88,6 +108,9 @@ body
           border-radius: 1px
           &::placeholder
             font-size: 12px
+        label
+          .field-icon
+            bottom: 27px
       &__device
         padding: 0 44px
         justify-content: space-between
@@ -1016,6 +1039,14 @@ body
         label
           input
             padding-left: 85px
+
+    // Header
+
+    .header
+      .dropdown_notification
+        .dropdown-menu
+          &.show
+            left: -150px!important
 
     // Dashboard
 
