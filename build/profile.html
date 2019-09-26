@@ -198,6 +198,7 @@
                             <a class="nav-item nav-link active" id="nav-email-tab" data-toggle="tab" href="#nav-email" role="tab" aria-controls="nav-email" aria-selected="true">Update Email</a>
                             <a class="nav-item nav-link" id="nav-password-tab" data-toggle="tab" href="#nav-password" role="tab" aria-controls="nav-password" aria-selected="false">Update Password</a>
                             <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                            <a class="nav-item nav-link" id="nav-personalize-tab" data-toggle="tab" href="#nav-personalize" role="tab" aria-controls="nav-personalize" aria-selected="false">Personalize</a>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -265,6 +266,92 @@
                             </form>
                             <p>WARNING: Verify your information before saving changes. Mistakes to your login credentials
                                 could lock you out of your account.</p>
+                            <input type="submit" class="btn_blue" value="Save Changes" data-toggle="modal" data-target="#save_profile">
+                        </div>
+                        <div class="tab-pane fade" id="nav-personalize" role="tabpanel" aria-labelledby="nav-personalize-tab">
+                            <div class="choosed_services">
+                                <h3 class="title">Your Services</h3>
+                                <div class="box">
+                                    <h3 class="title">What do you use the VPN for?</h3>
+                                    <ul class="p-0 m-0 row steps__choose">
+                                        <li class="col-12 col-md-4 p-0">
+                                            <a href="#/" class="font_20 d-flex align-items-center">
+                                                <img src="img/icon_stream.svg" alt="Icon" />
+                                                <img src="img/icon_stream_red.svg" alt="Icon" />
+                                                Streaming video
+                                            </a>
+                                        </li>
+                                        <li class="col-12 col-md-4 p-0">
+                                            <a href="#/" class="font_20 d-flex align-items-center">
+                                                <img src="img/icon_wifi.svg" alt="Icon" />
+                                                <img src="img/icon_wifi_red.svg" alt="Icon" />
+                                                WiFi security
+                                            </a>
+                                        </li>
+                                        <li class="col-12 col-md-4 p-0">
+                                            <a href="#/" class="font_20 d-flex align-items-center">
+                                                <img src="img/icon_block.svg" alt="Icon" />
+                                                <img src="img/icon_block_red.svg" alt="Icon" />
+                                                Bypass Firewall
+                                            </a>
+                                        </li>
+                                        <li class="col-12 col-md-4 p-0">
+                                            <a href="#/" class="font_20 d-flex align-items-center">
+                                                <img src="img/icon_games.svg" alt="Icon" />
+                                                <img src="img/icon_games_red.svg" alt="Icon" />
+                                                Gaming
+                                            </a>
+                                        </li>
+                                        <li class="col-12 col-md-4 p-0">
+                                            <a href="#/" class="font_20 d-flex align-items-center">
+                                                <img src="img/icon_others.svg" alt="Icon" />
+                                                <img src="img/icon_others_red.svg" alt="Icon" />
+                                                Others
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <h3 class="title">What devices do you use the vpn on?</h3>
+                                    <ul class="p-md-0 p-lg-0 steps__device">
+                                        <li>
+                                            <a href="#/"><img src="img/icon_android.svg" alt="Icon" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#/"><img src="img/icon_ios.svg" alt="Icon" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#/"><img src="img/icon_windows.svg" alt="Icon" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#/"><img src="img/icon_macos.svg" alt="Icon" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#/"><img src="img/icon_vpn.svg" alt="Icon" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#/">Others</a>
+                                        </li>
+                                    </ul>
+                                    <h3 class="title">Whats your preferred location of server?</h3>
+                                    <div class="m-0 mb-5 mb-md-4 mb-lg-4 p-md-0 p-lg-0 steps__location">
+                                        <label>
+                                            <select class="focused form-control">
+                                                <option disabled selected>Choose country</option>
+                                                <option>USA</option>
+                                                <option>Italy</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <h3 class="title">What services do you want to unblock?</h3>
+                                    <ul class="p-md-0 p-lg-0 steps__device">
+                                        <li>
+                                            <a href="#/">Netflix</a>
+                                        </li>
+                                        <li>
+                                            <a href="#/">Hola</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <input type="submit" class="btn_blue" value="Save Changes" data-toggle="modal" data-target="#save_profile">
                         </div>
                     </div>

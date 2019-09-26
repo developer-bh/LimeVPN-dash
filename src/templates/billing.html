@@ -67,7 +67,7 @@
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Invoices</a>
                             <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Billing Details</a>
-                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Payment method</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Update Card</a>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -75,7 +75,12 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th scope="col"></th>
+                                    <th class="form-check" scope="col">
+                                        <label>
+                                            <input class="selectAll" type="checkbox" value="">
+                                            <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                                        </label>
+                                    </th>
                                     <th scope="col">ID</th>
                                     <th scope="col">Product</th>
                                     <th scope="col">Date</th>
@@ -157,21 +162,46 @@
                             </form>
                         </div>
                         <div class="tab-pane fade billing_methods" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <ul class="p-0 d-flex flex-wrap">
-                                <li>
-                                    <a href="#/">
-                                        <img src="img/logo_paymentwall.svg" alt="Logo" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#/">
-                                        <img src="img/logo_paypal.svg" alt="Logo" />
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="d-flex justify-content-end">
-                                <a class="btn_blue" href="#/">Export All</a>
-                            </div>
+                            <!--<ul class="p-0 d-flex flex-wrap">-->
+                                <!--<li>-->
+                                    <!--<a href="#/">-->
+                                        <!--<img src="img/logo_paymentwall.svg" alt="Logo" />-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="#/">-->
+                                        <!--<img src="img/logo_paypal.svg" alt="Logo" />-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                            <!--<div class="d-flex justify-content-end">-->
+                                <!--<a class="btn_blue" href="#/">Export All</a>-->
+                            <!--</div>-->
+                            <form>
+                                <label >
+                                    Full name
+                                    <input type="text">
+                                </label>
+                                <label class="label_four">
+                                    Credit card number
+                                    <input type="number">
+                                </label>
+                                <label class="label_four">
+                                    Expiry
+                                    <input type="number">
+                                </label>
+                                <label class="label_four">
+                                    Billing code
+                                    <input type="number">
+                                </label>
+                                <label class="label_four">
+                                    Cvv
+                                    <input type="number">
+                                </label>
+                                <div class="d-flex justify-content-end w-100">
+                                    <input type="submit" class="btn_blue" value="Update card">
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -214,7 +244,7 @@
                             <tr>
                                 <th class="form-check" scope="row">
                                     <label>
-                                        <input type="checkbox" value="">
+                                        <input class="selectAll" type="checkbox" value="">
                                         <span class="cr"><i class="cr-icon fas fa-check"></i></span>
                                     </label>
                                 </th>
@@ -312,22 +342,49 @@
                     </div>
                 </div>
                 <div class="billing_accordion box d-flex justify-content-between align-items-center flex-wrap">
-                    <h3 class="title">Payment Method</h3>
+                    <h3 class="title">Update Card</h3>
                     <a class="accordion_arrow" href="#/"><img src="img/icon_billing_arrow.svg" alt="Arrow" /></a>
-                    <div class="accordion_hidden billing_accordion__methods">
-                        <ul class="p-0 d-flex flex-wrap justify-content-between">
-                            <li>
-                                <a href="#/">
-                                    <img src="img/logo_paymentwall.svg" alt="Logo" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#/">
-                                    <img src="img/logo_paypal.svg" alt="Logo" />
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="accordion_hidden billing_accordion__form">
+                        <form>
+                            <label>
+                                Full name
+                                <input type="text">
+                            </label>
+                            <label>
+                                Credit card number
+                                <input type="number">
+                            </label>
+                            <label>
+                                Expiry
+                                <input type="number">
+                            </label>
+                            <label>
+                                Billing code
+                                <input type="number">
+                            </label>
+                            <label>
+                                Cvv
+                                <input type="number">
+                            </label>
+                            <div class="d-flex justify-content-end w-100">
+                                <input type="submit" class="btn_blue" value="Update card">
+                            </div>
+                        </form>
                     </div>
+                    <!--<div class="accordion_hidden billing_accordion__methods">-->
+                        <!--<ul class="p-0 d-flex flex-wrap justify-content-between">-->
+                            <!--<li>-->
+                                <!--<a href="#/">-->
+                                    <!--<img src="img/logo_paymentwall.svg" alt="Logo" />-->
+                                <!--</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="#/">-->
+                                    <!--<img src="img/logo_paypal.svg" alt="Logo" />-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>

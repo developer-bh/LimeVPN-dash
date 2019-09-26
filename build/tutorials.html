@@ -192,71 +192,302 @@
         <div class="row">
             <div class="col-12 col-md-12">
                 <h2 class="s_title text-center">Learn how to use VPN</h2>
-                <ul class="tutorials__logos p-0 row">
-                    <li class="col-6 col-md-3">
-                        <a href="#/">
-                            <img src="img/logo_windows.svg" alt="Logo" />
-                        </a>
+                <ul class="tutorials__logos p-0 row nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="col-6 col-md-3 nav-item">
+                        <a class="nav-link active" id="pills-windows-tab" data-toggle="pill" href="#pills-windows" role="tab" aria-controls="pills-windows" aria-selected="true"><img src="img/logo_windows.svg" alt="Logo" /></a>
                     </li>
-                    <li class="col-6 col-md-3">
-                        <a href="#/">
-                            <img src="img/logo_macos.svg" alt="Logo" />
-                        </a>
+                    <li class="col-6 col-md-3 nav-item">
+                        <a class="nav-link" id="pills-macos-tab" data-toggle="pill" href="#pills-macos" role="tab" aria-controls="pills-macos" aria-selected="false"><img src="img/logo_macos.svg" alt="Logo" /></a>
                     </li>
-                    <li class="col-6 col-md-3">
-                        <a href="#/">
-                            <img src="img/logo_linux.svg" alt="Logo" />
-                        </a>
+                    <li class="col-6 col-md-3 nav-item">
+                        <a class="nav-link" id="pills-android-tab" data-toggle="pill" href="#pills-android" role="tab" aria-controls="pills-android" aria-selected="false"><img src="img/logo_android.svg" alt="Logo" /></a>
                     </li>
-                    <li class="col-6 col-md-3">
-                        <a href="#/">
-                            <img src="img/logo_android.svg" alt="Logo" />
-                        </a>
-                    </li>
-                    <li class="col-6 col-md-3">
-                        <a href="#/">
-                            <img src="img/logo_chrome.svg" alt="Logo" />
-                        </a>
-                    </li>
-                    <li class="col-6 col-md-3">
-                        <a href="#/">
-                            <img src="img/logo_ios.svg" alt="Logo" />
-                        </a>
-                    </li>
-                    <li class="col-6 col-md-3">
-                        <a href="#/">
-                            <img src="img/logo_playstation.svg" alt="Logo" />
-                        </a>
-                    </li>
-                    <li class="col-6 col-md-3">
-                        <a href="#/">
-                            <img src="img/logo_modems.svg" alt="Logo" />
-                        </a>
+                    <li class="col-6 col-md-3 nav-item">
+                        <a class="nav-link" id="pills-ios-tab" data-toggle="pill" href="#pills-ios" role="tab" aria-controls="pills-ios" aria-selected="false"><img src="img/logo_ios.svg" alt="Logo" /></a>
                     </li>
                 </ul>
-                <h3 class="title">Windows Setup Instructions</h3>
-                <ul class="tutorials__instructions p-0">
-                    <li><a href="#/">L2TP IPSEC</a></li>
-                    <li><a href="#/">Softether</a></li>
-                    <li><a href="#/">SSTP</a></li>
-                    <li><a href="#/">SOCKS5</a></li>
-                    <li><a href="#/">PPTP</a></li>
-                    <li><a href="#/">OPEN VPN</a></li>
-                    <li><a href="#/">IKEv2</a></li>
-                </ul>
-                <h3 class="title title_how">How to Setup PPTP VPN on Windows</h3>
-                <ul class="colums p-0">
-                    <li><b>1-</b> Run <b>Rasphone</b></li>
-                    <li><b>2-</b> Press <b>Win key + R</b> to open Run window. Enter rasphone command and press OK</li>
-                    <li><b>3-</b> Create a new network device by clicking on <b>New</b></li>
-                    <li><b>4-</b> Choose Workplace network</li>
-                    <li><b>5-</b> In the Internet address, enter any one of the server mentioned under http://network.limevpn.com/</li>
-                    <li><b>6-</b> Type in your LimeVPN login email and Password in their respective fields.</li>
-                    <li><b>7-</b> Leave Domain blank and click Connect</li>
-                    <li><b>8-</b> Wait for the process to finish and at the end you should be connected to the VPN</li>
-                </ul>
-                <div class="tutorials__more">
-                    <a class="font_16 font-weight-600" href="#/">Read more</a>
+                <div class="tab-content" id="pills-tabContent">
+                    <!--begin windows-->
+                    <div class="tab-pane fade show active" id="pills-windows" role="tabpanel" aria-labelledby="pills-windows-tab">
+                        <h3 class="title">Windows Setup Instructions</h3>
+                        <ul class="tutorials__instructions p-0 nav nav-pills mb-3" id="pills-tab2" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-win-L2TP-tab" data-toggle="pill" href="#pills-win-L2TP" role="tab" aria-controls="pills-win-L2TP" aria-selected="true">L2TP/IPSEC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-win-SOFTETHER-tab" data-toggle="pill" href="#pills-win-SOFTETHER" role="tab" aria-controls="pills-win-SOFTETHER" aria-selected="false">SOFTETHER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-win-SSTP-tab" data-toggle="pill" href="#pills-win-SSTP" role="tab" aria-controls="pills-win-SSTP" aria-selected="false">SSTP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-win-SOCKS-tab" data-toggle="pill" href="#pills-win-SOCKS" role="tab" aria-controls="pills-win-SOCKS" aria-selected="false">SOCKS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-win-PPTP-tab" data-toggle="pill" href="#pills-win-PPTP" role="tab" aria-controls="pills-win-PPTP" aria-selected="false">PPTP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-win-VPN-tab" data-toggle="pill" href="#pills-win-VPN" role="tab" aria-controls="pills-win-VPN" aria-selected="false">OPEN VPN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-win-IKEV2-tab" data-toggle="pill" href="#pills-win-IKEV2" role="tab" aria-controls="pills-win-IKEV2" aria-selected="false">IKEV2</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tutorials_content" id="pills-tabContent2">
+                            <div class="tab-pane fade show active" id="pills-win-L2TP" role="tabpanel" aria-labelledby="pills-win-L2TP-tab">
+                                <h3 class="title title_how">How to Configure L2TP on Windows 10 ?</h3>
+                                <iframe width="70%" height="295" src="https://www.youtube.com/embed/MBXQMs7qc80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2123284-how-to-configure-l2tp-on-windows-10">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-win-SOFTETHER" role="tabpanel" aria-labelledby="pills-win-SOFTETHER-tab">
+                                <h3 class="title title_how">How to Configure SoftEther VPN on Windows ?</h3>
+                                <h6>How to setup SoftEther VPN connection on Windows ?</h6>
+                                <p>Download <a target="_blank" href="http://www.limevpn.com/downloads/LimeVPNSoftEther.exe">SoftEther VPN client</a> for Windows (Open the link and click on download)</p>
+                                <p>Click on the downloaded .exe file, once the setup starts, click "Next"</p>
+                                <img src="https://downloads.intercomcdn.com/i/o/58891919/e4be1964e968db4422589cfb/windows-softether-1.png" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/1892278-how-to-configure-softether-vpn-on-windows">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-win-SSTP" role="tabpanel" aria-labelledby="pills-win-SSTP-tab">
+                                <h3 class="title title_how">How to setup VPN on Windows 10 using SSTP protocol ?</h3>
+                                <h6>1. Click on Windows icon and then click on settings.</h6>
+                                <img src="https://downloads.intercomcdn.com/i/o/118622724/d765ba38bdd637b6ce33d1d7/WInEOkBfIvGIRwbU6eK9zX5wYxtbQkf9wTi5t7IWfLAZa6ZOt3ppSHuSxzUBOQYRSv2a660JKTCnK5oGIqekEgXtc2S8xJ-OG07sP6zI77d77x_SC9nRXi_dau04bsfhA1xrb-Dx" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2948743-how-to-setup-vpn-on-windows-10-using-sstp-protocol">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-win-SOCKS" role="tabpanel" aria-labelledby="pills-win-SOCKS-tab">
+                                <h3 class="title title_how">How to setup VPN as Proxy in Windows ?</h3>
+                                <p>You can now use VPN servers as proxy in your Windows. Configuring VPN server as a proxy will help you unleash the download speed which is usually a bit restrictive when using VPN. The steps below will guide you on how to setup a proxy connection on Internet Explorer browser:</p>
+                                <h6>1. Open <b>Run</b> window by pressing <i>Windows key + R</i>, enter inetcpl.cpl and click on <b>OK</b>.</h6>
+                                <img src="https://downloads.intercomcdn.com/i/o/139139449/2a3766df085cfadf0271cb2c/image.png" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/3205347-how-to-setup-vpn-as-proxy-in-windows">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-win-PPTP" role="tabpanel" aria-labelledby="pills-win-PPTP-tab">
+                                <h3 class="title title_how">How to setup VPN connection on Windows 10 using PPTP protocol ?</h3>
+                                <p>This is a tutorial on how to connect to LimeVPN using the PPTP protocol on Windows 10.</p>
+                                <h6>Open <i>Windows Settings > Network & Internet > VPN</i>, and click on “<i>Add a VPN connection</i>”.</h6>
+                                <img src="https://downloads.intercomcdn.com/i/o/72365192/89f0c17de392d136c4fc8b77/KjOX4CJAtvzNCEGJNkmkJA1h5hjCLtqP2DnIvwZRKkxDoDEeZLf3FY2l_ntCmyOgwj6UNH-oC49SID5rXJyBRvyCgC_4ZKzYwBb4HpmdSADJ7qNDr6kI7f25r_ejoWS9BjT9aPrQ" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/1933013-how-to-setup-vpn-connection-on-windows-10-using-pptp-protocol">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-win-VPN" role="tabpanel" aria-labelledby="pills-win-VPN-tab">
+                                <h3 class="title title_how">How to Configure OpenVPN on Windows 10 ?</h3>
+                                <iframe width="70%" height="295" src="https://www.youtube.com/embed/7Ge6XVHb4cg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2123275-how-to-configure-openvpn-on-windows-10">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-win-IKEV2" role="tabpanel" aria-labelledby="pills-win-IKEV2-tab">
+                                <h3 class="title title_how">How to setup VPN connection on Windows 10 using IKEv2 protocol ?</h3>
+                                <h6>How to setup IKEv2 VPN on Windows 10- a step by step Guide</h6>
+                                <p>Click on Start and then Settings</p>
+                                <img src="https://downloads.intercomcdn.com/i/o/68919802/d973a94daa8756d70f110310/IkEv2-1.png" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2157869-how-to-setup-vpn-connection-on-windows-10-using-ikev2-protocol">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end windows-->
+                    <!--begin macos-->
+                    <div class="tab-pane fade" id="pills-macos" role="tabpanel" aria-labelledby="pills-macos-tab">
+                        <h3 class="title">MacOS Setup Instructions</h3>
+                        <ul class="tutorials__instructions p-0 nav nav-pills mb-3" id="pills-tab3" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-macos-L2TP-tab" data-toggle="pill" href="#pills-macos-L2TP" role="tab" aria-controls="pills-macos-L2TP" aria-selected="true">L2TP/IPSEC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-macos-SOFTETHER-tab" data-toggle="pill" href="#pills-macos-SOFTETHER" role="tab" aria-controls="pills-macos-SOFTETHER" aria-selected="false">SOFTETHER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-macos-SOCKS-tab" data-toggle="pill" href="#pills-macos-SOCKS" role="tab" aria-controls="pills-macos-SOCKS" aria-selected="false">SOCKS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-macos-PPTP-tab" data-toggle="pill" href="#pills-macos-PPTP" role="tab" aria-controls="pills-macos-PPTP" aria-selected="false">PPTP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-macos-VPN-tab" data-toggle="pill" href="#pills-macos-VPN" role="tab" aria-controls="pills-macos-VPN" aria-selected="false">OPEN VPN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-macos-IKEV2-tab" data-toggle="pill" href="#pills-macos-IKEV2" role="tab" aria-controls="pills-macos-IKEV2" aria-selected="false">IKEV2</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tutorials_content" id="pills-tabContent3">
+                            <div class="tab-pane fade show active" id="pills-macos-L2TP" role="tabpanel" aria-labelledby="pills-macos-L2TP-tab">
+                                <h3 class="title title_how">How to setup L2TP VPN on Mac OS X ?</h3>
+                                <h6>Setting up VPN on Mac OS X – L2TP VPN Setup Instructions</h6>
+                                <p>Click the Apple icon, then open System Preferences.</p>
+                                <img src="https://downloads.intercomcdn.com/i/o/58898894/60950f9e6536182781a6e518/mac-osx-l2tp-sys-pref.png" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/1892406-how-to-setup-l2tp-vpn-on-mac-os-x">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-macos-SOFTETHER" role="tabpanel" aria-labelledby="pills-macos-SOFTETHER-tab">
+                                <h3 class="title title_how">How to set up SoftEther VPN on Mac OS X ?</h3>
+                                <p>1. Download the SoftEther application for Mac OS.
+                                    Unzip it, add it to your Applications folder and launch it from your Launchpad.</p>
+                                <p>2. Input your Mac OS account User Name and Password.</p>
+                                <img src="https://limevpn.intercom-attachments-7.com/i/o/145894267/ec1c809d6ff0aabe0f7799af/kihKXmIgyiTD1dDbkubKYl1ysvlLtzF-SQqwqxFzVyVFyYil2VtR5IZ0JHdSIsAcciNv7OoH61HXR80YoI4iHig7cF1VRvBqUXr3cFj6jTQTSmuDz545iebcZCmdNMKryd9tvkVj" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/3309091-how-to-set-up-softether-vpn-on-mac-os-x">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-macos-SOCKS" role="tabpanel" aria-labelledby="pills-macos-SOCKS-tab">
+                                <h3 class="title title_how">How to setup SOCKS5 on Mac OS ?</h3>
+                                <p>You can now use LimeVPN servers as a proxy. Follow the below steps to configure LimeVPN server as SOCKS5 proxy.</p>
+                                <p>Go to System preference on your Mac and click on “Network”</p>
+                                <img src="https://downloads.intercomcdn.com/i/o/83907938/9a9b1047b6dcd81bd30785a5/1.png" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2467102-how-to-setup-socks5-on-mac-os">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-macos-PPTP" role="tabpanel" aria-labelledby="pills-macos-PPTP-tab">
+                                <h3 class="title title_how">How to setup PPTP VPN on Mac OS X ?</h3>
+                                <p><b>NOTE: Apple no longer supports PPTP protocol on latest versions of Mac OS</b></p>
+                                <h6>Follow the below steps to setup PPTP on Mac</h6>
+                                <p>Open Network Preferences</p>
+                                <img src="https://downloads.intercomcdn.com/i/o/58893395/a964b30749b2a0ab55eeca7d/mac-osx-open-network-pref.png" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/1892340-how-to-setup-pptp-vpn-on-mac-os-x">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-macos-VPN" role="tabpanel" aria-labelledby="pills-macos-VPN-tab">
+                                <h3 class="title title_how">How to Configure OpenVPN on Mac ?</h3>
+                                <iframe width="70%" height="295" src="https://www.youtube.com/embed/pRZ506eqPXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2123248-how-to-configure-openvpn-on-mac">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-macos-IKEV2" role="tabpanel" aria-labelledby="pills-macos-IKEV2-tab">
+                                <h3 class="title title_how">How to configure IKEv2 on Mac OS X ?</h3>
+                                <h6>Mac OS X IKEv2 Setup Instructions</h6>
+                                <p>Click on "System Preference" and then click on "Network".</p>
+                                <img src="https://downloads.intercomcdn.com/i/o/68905820/93e7a0b6963293f3891cdcef/1.PNG" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2157505-how-to-configure-ikev2-on-mac-os-x">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end macos-->
+                    <!--begin android-->
+                    <div class="tab-pane fade" id="pills-android" role="tabpanel" aria-labelledby="pills-android-tab">
+                        <h3 class="title">MacOS Setup Instructions</h3>
+                        <ul class="tutorials__instructions p-0 nav nav-pills mb-3" id="pills-tab4" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-android-L2TP-tab" data-toggle="pill" href="#pills-android-L2TP" role="tab" aria-controls="pills-android-L2TP" aria-selected="true">L2TP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-android-PPTP-tab" data-toggle="pill" href="#pills-android-PPTP" role="tab" aria-controls="pills-android-PPTP" aria-selected="false">PPTP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-android-VPN-tab" data-toggle="pill" href="#pills-android-VPN" role="tab" aria-controls="pills-android-VPN" aria-selected="false">OPEN VPN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-android-IKEV2-tab" data-toggle="pill" href="#pills-android-IKEV2" role="tab" aria-controls="pills-android-IKEV2" aria-selected="false">IKEV2</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tutorials_content" id="pills-tabContent4">
+                            <div class="tab-pane fade show active" id="pills-android-L2TP" role="tabpanel" aria-labelledby="pills-android-L2TP-tab">
+                                <h3 class="title title_how">How to configure L2TP on Android ?</h3>
+                                <iframe width="70%" height="295" src="https://www.youtube.com/embed/A7ecW6yuSDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2123036-how-to-configure-l2tp-on-android">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-android-PPTP" role="tabpanel" aria-labelledby="pills-android-PPTP-tab">
+                                <h3 class="title title_how">How to setup VPN on Android (PPTP) ?</h3>
+                                <h6>Android PPTP VPN Setup Instructions</h6>
+                                <p>Open the menu and choose Settings</p>
+                                <img src="https://downloads.intercomcdn.com/i/o/72365354/b60578c4ef067dd390435c26/android-apps-screen.png" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/1892579-how-to-setup-vpn-on-android-pptp">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-android-VPN" role="tabpanel" aria-labelledby="pills-android-VPN-tab">
+                                <h3 class="title title_how">How to Configure OpenVPN on Android ?</h3>
+                                <h6>OpenVPN on Android</h6>
+                                <p>You can download the OpenVPN client here (<a target="_blank" href="https://play.google.com/store/apps/details?id=de.blinkt.openvpn&hl=en">https://play.google.com/store/apps/details?id=de.blinkt.openvpn&hl=en</a>) or you can visit your Google store and search OpenVPN for Android</p>
+                                <p>Download the OpenVPN file from <a target="_blank" href="https://www.limevpn.com/downloads/OpenVPN-Config-1194.zip">here</a> and extract it</p>
+                                <p>Open the OpenVPN application and click on the plus sign at the top right corner of the app.</p>
+                                <img src="https://www.limevpn.com/wp-content/uploads/2017/01/1.jpg" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/1892595-how-to-configure-openvpn-on-android">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-android-IKEV2" role="tabpanel" aria-labelledby="pills-android-IKEV2-tab">
+                                <h3 class="title title_how">How to setup VPN on Android using IKEv2 ?</h3>
+                                <p>IKEv2 can be configured on Android using strongSwan. It is a open source IPsec based VPN solution.</p>
+                                <h6>1. Open PlayStore on your Android device and install "strongSwan" app</h6>
+                                <img src="https://downloads.intercomcdn.com/i/o/70316063/cc9a8bd49485fe9358274dc2/1.png" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2193682-how-to-setup-vpn-on-android-using-ikev2">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end android-->
+                    <!--begin ios-->
+                    <div class="tab-pane fade" id="pills-ios" role="tabpanel" aria-labelledby="pills-ios-tab">
+                        <h3 class="title">MacOS Setup Instructions</h3>
+                        <ul class="tutorials__instructions p-0 nav nav-pills mb-3" id="pills-tab5" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-ios-L2TP-tab" data-toggle="pill" href="#pills-ios-L2TP" role="tab" aria-controls="pills-ios-L2TP" aria-selected="true">L2TP/IPSEC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-ios-PPTP-tab" data-toggle="pill" href="#pills-ios-PPTP" role="tab" aria-controls="pills-ios-PPTP" aria-selected="false">PPTP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-ios-VPN-tab" data-toggle="pill" href="#pills-ios-VPN" role="tab" aria-controls="pills-ios-VPN" aria-selected="false">OPEN VPN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-ios-IKEV2-tab" data-toggle="pill" href="#pills-ios-IKEV2" role="tab" aria-controls="pills-ios-IKEV2" aria-selected="false">IKEV2</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tutorials_content" id="pills-tabContent5">
+                            <div class="tab-pane fade show active" id="pills-ios-L2TP" role="tabpanel" aria-labelledby="pills-android-L2TP-tab">
+                                <h3 class="title title_how">How to Configure L2TP on iOS ?</h3>
+                                <iframe width="70%" height="295" src="https://www.youtube.com/embed/_wel_ZSdWs0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2123202-how-to-configure-l2tp-on-ios">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-ios-PPTP" role="tabpanel" aria-labelledby="pills-ios-PPTP-tab">
+                                <h3 class="title title_how">How to Configure PPTP VPN connection on iPhone or iPad ?</h3>
+                                <p><b>NOTE: Latest versions of iOS no longer support PPTP</b></p>
+                                <h6>iOS PPTP VPN Setup Instructions</h6>
+                                <p>Launch the Settings option</p>
+                                <img src="https://downloads.intercomcdn.com/i/o/58899656/0f521b3662d961fdbe6f9b53/ios-apps-screen.png" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/1892482-how-to-configure-pptp-vpn-connection-on-iphone-o">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-ios-VPN" role="tabpanel" aria-labelledby="pills-ios-VPN-tab">
+                                <h3 class="title title_how">How to Configure OpenVPN on iOS ?</h3>
+                                <iframe width="70%" height="295" src="https://www.youtube.com/embed/iiKvZtDOmZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2123215-how-to-configure-openvpn-on-ios">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-ios-IKEV2" role="tabpanel" aria-labelledby="pills-ios-IKEV2-tab">
+                                <h3 class="title title_how">How to configure IKEv2 on iOS ?</h3>
+                                <p>All the updated iOS versions have IKEv2 protocol for VPN connection, follow the below steps to configure VPN on your iPhone or iPad using IKEv2</p>
+                                <p>Click on <b>Settings</b> to open the settings menu and click on General, under <b>General</b> you will find the <b>VPN</b> option</p>
+                                <img src="https://downloads.intercomcdn.com/i/o/94348893/c781ed0fb1745e77f0cffb66/IMG-0089.jpg" alt="Image" />
+                                <div class="tutorials__more">
+                                    <a class="font_16 font-weight-600" target="_blank" href="https://help.limevpn.com/en/articles/2610496-how-to-configure-ikev2-on-ios">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end ios-->
                 </div>
             </div>
         </div>

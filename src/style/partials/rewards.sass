@@ -24,6 +24,41 @@
       margin-bottom: 30px
     form
       display: flex
+      flex-wrap: wrap
+      width: 95%
+      .element
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        margin-bottom: 10px
+        position: relative
+        .remove
+          position: absolute
+          right: -25px
+          font-size: 30px
+          font-weight: 600
+          color: red
+          cursor: pointer
+          transform: rotate(45deg)
+      .add
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 35px
+        padding: 0 30px
+        margin-top: 10px
+        border: 1px solid #d2eef9
+        cursor: pointer
+        color: #b3b3b3
+        font-size: 15px
+        font-weight: 400
+        transition: 0.3s
+        border-radius: 5px
+        &:hover
+          transition: 0.3s
+          background-color: $color_blue
+          color: white
       input
         appearance: none
       input[type="email"]

@@ -2,6 +2,8 @@
 
 .tutorials
   padding-bottom: 50px
+  iframe
+    margin-bottom: 20px
   .s_title
     margin-bottom: 30px
   .col-12
@@ -32,6 +34,7 @@
             opacity: 1
             transition: 0.3s
         &.active
+          background-color: white!important
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.1)
           border: 1px solid rgba(210, 238, 249, 0)
           img
@@ -66,7 +69,8 @@
         text-decoration: none
         text-transform: uppercase
         &.active
-          color: $color_blue
+          background-color: transparent!important
+          color: $color_blue!important
           border-color: $color_blue
   .colums
     columns: 2
@@ -83,6 +87,27 @@
       b
         color: #666666
         font-weight: 500
+  .tutorials_content
+    p
+      color: #999999
+      font-size: 15px
+      font-weight: 400
+      letter-spacing: 0.37px
+      line-height: 16px
+      margin-bottom: 20px
+      b
+        color: #666666
+        font-weight: 600
+    h1, h2, h3, h4, h5, h6
+      color: #808080
+      font-weight: 500
+      line-height: 24px
+      margin-bottom: 20px
+      b
+        font-weight: 600
+    img
+      margin-bottom: 20px
+
   &__more
     display: flex
     justify-content: flex-end
